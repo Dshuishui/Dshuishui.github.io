@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 8px;
+            display: block;
+        }
+        h1{
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function date() {
+            var date=Date();
+            // console.log(date.)
+
+            // alert(date);
+            // document.getElementById('time').innerHTML = date.toLocaleTimeString();
+            // var delay = 1000 - date.getMilliseconds();
+            // setTimeout(updateTime, delay);
+        }
+    </script>
+    <!-- <script src="./1.JS" type="text/javascript"></script> -->
+
+</head>
+<body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <p id="time">
+    <script>
+        // date();
+        // var sb = "asd"
+        // console.log(sb);
+        var currentDate = new Date();
+// var dayOfMonth = currentDate.getDate();
+var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var monthName = monthNames[currentDate.getMonth()];
+var day = currentDate.getDate();
+var xingqi = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sun")[currentDate.getDay()];
+var year = currentDate.getFullYear();
+var hours = currentDate.getHours();
+var minutes = currentDate.getMinutes();
+var seconds = currentDate.getSeconds();
+var timeZoneOffset = new Date().getTimezoneOffset();
+var timeZoneOffsetHours = Math.abs(timeZoneOffset / 60);
+var timeZoneOffsetMinutes = Math.abs(timeZoneOffset % 60);
+var timeZoneOffsetSign = timeZoneOffset > 0 ? "-" : "+";
+var formattedTime = xingqi + " " + monthName + " " + day + " " + hours + ":" + minutes + ":" + seconds + " " + "CST"+ " " + year;
+// timeZoneOffsetSign + addLeadingZero(timeZoneOffsetHours) + ":" + addLeadingZero(timeZoneOffsetMinutes) 
+// console.log(formattedTime);
+var timeParagraph = document.getElementById("time");
+    timeParagraph.innerHTML = formattedTime;
+
+function addLeadingZero(number) {
+  return (number < 10 ? "0" : "") + number;
+}
+
+    </script>
+   
+        <br>There was an unexpected error (type=Not Found, status=404).<br>
+    No message available</p>
+</body>
+</html>
