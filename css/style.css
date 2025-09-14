@@ -1,0 +1,409 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+/* 头部样式 */
+header {
+    margin-bottom: 30px;
+    padding: 25px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.profile-info h1 {
+    font-size: 2.4em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.intro {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+/* 通用section样式 */
+.section {
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.section h2 {
+    font-size: 1.9em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 2px;
+}
+
+/* 教育经历样式 */
+.education-item {
+    background: #fafafa;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item-header h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    font-weight: 600;
+    flex: 1;
+    min-width: 280px;
+}
+
+.date {
+    background: #ecf0f1;
+    color: #7f8c8d;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.institution {
+    color: #34495e;
+    font-size: 1em;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.details p {
+    margin-bottom: 6px;
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* 实习经历样式 */
+.experience-item {
+    background: #f8f9fa;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.position {
+    color: #e74c3c;
+    font-size: 1em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* 项目经历样式 */
+.project-item {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.project-item::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.role {
+    color: #8e44ad;
+    font-size: 1em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* 专业技能样式 */
+.skills-container {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.skill-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 8px 0;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skill-bullet {
+    color: #3498db;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.skill-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* 获奖成果样式 */
+.awards-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #f39c12;
+}
+
+.award-category {
+    margin-bottom: 25px;
+}
+
+.award-category:last-child {
+    margin-bottom: 0;
+}
+
+.award-category h3 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.award-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.award-category li {
+    background: #f8f9fa;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #555;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 25px;
+    font-size: 0.9em;
+}
+
+.award-category li::before {
+    content: '•';
+    color: #f39c12;
+    font-size: 1.3em;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+/* 链接样式 */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* 底部样式 */
+footer {
+    margin-top: 30px;
+    padding: 25px 0;
+    border-top: 2px solid #f0f0f0;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 1em;
+}
+
+.copyright {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 15px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 10px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-info h1 {
+        font-size: 2em;
+    }
+    
+    .section h2 {
+        font-size: 1.6em;
+    }
+    
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .item-header h3 {
+        min-width: auto;
+        margin-bottom: 6px;
+    }
+    
+    .education-item, .experience-item, .project-item {
+        padding: 15px;
+    }
+    
+    .project-item::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 8px;
+    }
+    
+    .profile-info h1 {
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+    }
+    
+    .section h2 {
+        font-size: 1.4em;
+    }
+    
+    .education-item, .experience-item, .project-item, .skills-container, .awards-container {
+        padding: 12px;
+    }
+    
+    .section {
+        margin-bottom: 25px;
+    }
+}
+
+/* 平滑滚动动画 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
