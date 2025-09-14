@@ -14,9 +14,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 15px;
+    padding: 20px 20px;
 }
 
 /* 头部样式 */
@@ -55,13 +55,13 @@ header {
     font-weight: 500;
 }
 
-.orcid-info {
+.github-info {
     font-size: 0.95em;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
 }
 
-.orcid-info a {
+.github-info a {
     color: #3498db;
 }
 
@@ -70,6 +70,7 @@ header {
     color: #555;
     line-height: 1.7;
     max-width: 600px;
+    margin-top: 10px;
 }
 
 /* 通用section样式 */
@@ -99,18 +100,13 @@ header {
 
 /* 教育经历样式 */
 .education-item {
-    background: #fafafa;
+    background: #f8f9fa;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-/* .education-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-} */
 
 .item-header {
     display: flex;
@@ -161,17 +157,8 @@ header {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
-
-/* .experience-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, #e74c3c, #c0392b);
-} */
 
 .position {
     color: #e74c3c;
@@ -182,23 +169,12 @@ header {
 
 /* 项目经历样式 */
 .project-item {
-    /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    background: #f8f9fa;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     position: relative;
-}
-
-.project-item::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    z-index: 1;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .role {
@@ -210,19 +186,18 @@ header {
 
 /* 论文发表样式 */
 .paper-list {
-    background: #ffffff;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-    /* border-top: 3px solid #27ae60; */
 }
 
 .paper-item {
     margin-bottom: 25px;
     padding: 20px;
-    background: #f9f9f9;
+    background: #ffffff;
     border-radius: 8px;
-    /* border-left: 4px solid #27ae60; */
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
 .paper-item:last-child {
@@ -240,14 +215,14 @@ header {
 .paper-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 12px;
     align-items: center;
 }
 
 .paper-venue {
-    background: #27ae60;
-    color: white;
+    background: #ecf0f1;
+    color: #7f8c8d;
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 0.85em;
@@ -264,12 +239,34 @@ header {
 }
 
 .paper-type {
-    background: #3498db;
-    color: white;
+    background: #dde7f3;
+    color: #4a6fa5;
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 0.85em;
     font-weight: 500;
+}
+
+.paper-level {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.sci-top {
+    background: #d4edda;
+    color: #155724;
+}
+
+.ccf-b {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.ccf-c {
+    background: #f8d7da;
+    color: #721c24;
 }
 
 .paper-authors {
@@ -299,47 +296,48 @@ header {
     font-style: italic;
 }
 
-/* 专业技能样式 */
+/* 专业技能样式 - 与获奖成果保持一致 */
 .skills-container {
-    background: #fafafa;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-.skill-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-    padding: 8px 0;
+.skill-category {
+    margin-bottom: 20px;
 }
 
-.skill-item:last-child {
+.skill-category:last-child {
     margin-bottom: 0;
 }
 
-.skill-bullet {
-    color: #3498db;
+.skill-category h3 {
+    color: #2c3e50;
+    margin-bottom: 12px;
     font-size: 1.2em;
-    font-weight: bold;
-    margin-right: 12px;
-    flex-shrink: 0;
-    margin-top: 2px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
 }
 
-.skill-text {
+.skill-item {
+    background: #ffffff;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 6px;
     color: #555;
-    line-height: 1.6;
-    font-size: 0.95em;
+    line-height: 1.5;
+    font-size: 0.9em;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
 /* 获奖成果样式 */
 .awards-container {
-    background: #ffffff;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-    /* border-top: 3px solid #f39c12; */
 }
 
 .award-category {
@@ -364,26 +362,17 @@ header {
     padding-left: 0;
 }
 
-.award-category li {
-    background: #f8f9fa;
+.award-category li,
+.award-category > div:not(h3) {
+    background: #ffffff;
     margin-bottom: 8px;
     padding: 10px 12px;
     border-radius: 6px;
     color: #555;
     line-height: 1.5;
-    position: relative;
-    padding-left: 25px;
     font-size: 0.9em;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
-
-/* .award-category li::before {
-    content: '•';
-    color: #f39c12;
-    font-size: 1.3em;
-    position: absolute;
-    left: 10px;
-    top: 6px;
-} */
 
 /* 链接样式 */
 a {
@@ -424,13 +413,13 @@ footer {
 @media (max-width: 1024px) {
     .container {
         max-width: 100%;
-        padding: 15px 12px;
+        padding: 15px 15px;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px 10px;
+        padding: 15px 12px;
     }
     
     .profile-section {
@@ -464,10 +453,6 @@ footer {
     
     .education-item, .experience-item, .project-item, .paper-item {
         padding: 15px;
-    }
-    
-    .project-item::after {
-        display: none;
     }
     
     .paper-info {
