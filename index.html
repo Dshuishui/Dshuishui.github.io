@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>董余聪 - 个人主页</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <!-- 个人介绍 -->
@@ -15,6 +17,17 @@
                 <div class="profile-info">
                     <h1>董余聪</h1>
                     <p class="subtitle">南昌大学 · 计算机科学与技术 · 硕士研究生 · 中共党员</p>
+                    <p class="github-info">
+                        <strong>Email:</strong> <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a>
+                    </p>
+                    <p class="github-info">
+                        <strong>GitHub:</strong> <a href="https://github.com/Dshuishui"
+                            target="_blank">https://github.com/Dshuishui</a>
+                    </p>
+                    <p class="github-info">
+                        <strong>ORCID:</strong> <a href="https://orcid.org/0009-0002-6078-0590"
+                            target="_blank">https://orcid.org/0009-0002-6078-0590</a>
+                    </p>
                     <p class="intro">
                         专注于分布式系统与存储优化，在分布式数据库、键值存储系统等领域有深入研究。
                         热衷于系统架构设计与性能优化，具有丰富的项目实践经验。
@@ -26,18 +39,19 @@
         <!-- 教育经历 -->
         <section class="section">
             <h2>教育经历</h2>
-            
+
             <div class="education-item">
                 <div class="item-header">
                     <h3>南昌大学 - 计算机科学与技术 - 硕士</h3>
                     <span class="date">2023年09月 - 2026年06月</span>
                 </div>
-                <p class="institution">导师: 徐子真、王洋洋 · GOODLAB数据分析与优化实验室</p>
+                <p class="institution">导师: 徐子晨、王洋洋 · GOODLAB数据分析与优化实验室</p>
                 <div class="details">
                     <p><strong>综合排名:</strong> 前2% · 研究方向: 并行与分布式软件系统</p>
                     <p><strong>学术成果:</strong> VLDB 2025 A类会议在投，SCI一区TOP论文1篇，发明专利1项</p>
                     <p><strong>参与项目:</strong> 分布式数据服务、事物模型、处理语言、一致性体系结构等中英文书籍编写</p>
-                    <p><strong>外文书籍:</strong> 《Distributed Data Services: Fundamentals and Practices》，Springer出版社，承担撰写第4-7章节</p>
+                    <p><strong>外文书籍:</strong> 《Distributed Data Services: Fundamentals and
+                        Practices》，Springer出版社，主编徐子晨，承担撰写第4-7章节</p>
                 </div>
             </div>
 
@@ -56,7 +70,7 @@
         <!-- 实习经历 -->
         <section class="section">
             <h2>实习经历</h2>
-            
+
             <div class="experience-item">
                 <div class="item-header">
                     <h3>上海七牛信息技术有限公司 - 后端开发工程师（基础架构部）</h3>
@@ -64,10 +78,14 @@
                 </div>
                 <p class="position">基础架构 - 后端开发工程师</p>
                 <div class="details">
-                    <p><strong>项目开源:</strong> <a href="https://github.com/goplus/builder/tree/trailhead_sharing">https://github.com/goplus/builder/tree/trailhead_sharing</a></p>
+                    <p><strong>项目开源:</strong> <a
+                            href="https://github.com/goplus/builder/tree/trailhead_sharing">https://github.com/goplus/builder/tree/trailhead_sharing</a>
+                    </p>
                     <p><strong>应用技术:</strong> Vue.js、TypeScript、Go、YAP(XGO生态的DSL Web框架)、GORM、MySQL、Redis、Kodo对象存储</p>
                     <p><strong>工作职责:</strong> 组长，负责XBuilder平台的社交分享、移动端适配、录屏管理等功能模块的设计与开发，支持微信等5个主流平台分享接口</p>
-                    <p><strong>具体贡献:</strong> 提供录屏的前端展示及CRUD、社交相关前后端支持。Model层使用GROM定义MySQL数据模型，统一软删除和时间戳处理。在Controller层集中处理业务逻辑，注入各种服务。在API层基于YAP文件定义的RESTful接口，自动参数验证和错误处理</p>
+                    <p><strong>具体贡献:</strong>
+                        提供录屏的前端展示及CRUD、社交相关前后端支持。Model层使用GROM定义MySQL数据模型，统一软删除和时间戳处理。在Controller层集中处理业务逻辑，注入各种服务。在API层基于YAP文件定义的RESTful接口，自动参数验证和错误处理
+                    </p>
                 </div>
             </div>
         </section>
@@ -75,7 +93,7 @@
         <!-- 项目经历 -->
         <section class="section">
             <h2>项目经历</h2>
-            
+
             <div class="project-item">
                 <div class="item-header">
                     <h3>服务器无感的强隔离高弹性一致性分布式存储系统</h3>
@@ -84,7 +102,9 @@
                 <p class="role">学生小组负责人 · GOODLAB课题</p>
                 <div class="details">
                     <p><strong>项目描述:</strong> 针对服务器无感框架下函数级别分布式存储系统实现以及相关材料的撰写。</p>
-                    <p><strong>技术实现:</strong> 系统基于Raft算法构建一致层，基于CRDTs支持因果一致性，通过Gossip协议维护因果关系。核心创新在于利用LSTM神经网络分析节点问题式和网络拓扑变化，预测最优副本同步策略，实现强一致性与弱一致性的混合分布式存储系统。</p>
+                    <p><strong>技术实现:</strong>
+                        系统基于Raft算法构建一致层，基于CRDTs支持因果一致性，通过Gossip协议维护因果关系。核心创新在于利用LSTM神经网络分析节点问题式和网络拓扑变化，预测最优副本同步策略，实现强一致性与弱一致性的混合分布式存储系统。
+                    </p>
                     <p><strong>项目成果:</strong> SCI一区期刊论文1篇，一项发明专利。</p>
                 </div>
             </div>
@@ -96,10 +116,15 @@
                 </div>
                 <p class="role">个人科研课题实现</p>
                 <div class="details">
-                    <p><strong>项目描述:</strong> 基于Raft的分布式键值存储系统在使用LSM-tree存储引擎时存在写放大问题：每个数据写操作至少需要三次磁盘写入(Raft日志持久化、WAL日志、Memtable持久化)，以及LSM-tree后台压缩过程的多层数据合并重写。</p>
-                    <p><strong>技术实现:</strong> 设计并实现了Nezha，一种原创分布式键值分离存储系统。在Raft日志处理阶段实现KV分离以减少写放大，系统核心创新在于设计了自适应垃圾回收(GC)框架，通过多轮GC策略动态平衡KV分离带来的读性能损耗，同时实现GC版本隔离，保证数据处理的正确性。</p>
+                    <p><strong>项目描述:</strong>
+                        基于Raft的分布式键值存储系统在使用LSM-tree存储引擎时存在写放大问题：每个数据写操作至少需要三次磁盘写入(Raft日志持久化、WAL日志、Memtable持久化)，以及LSM-tree后台压缩过程的多层数据合并重写。
+                    </p>
+                    <p><strong>技术实现:</strong>
+                        设计并实现了Nezha，一种原创分布式键值分离存储系统。在Raft日志处理阶段实现KV分离以减少写放大，系统核心创新在于设计了自适应垃圾回收(GC)框架，通过多轮GC策略动态平衡KV分离带来的读性能损耗，同时实现GC版本隔离，保证数据处理的正确性。
+                    </p>
                     <p><strong>项目成果:</strong> CCF A类会议在投。</p>
-                    <p><strong>项目地址:</strong> <a href="https://github.com/Dshuishui/Nezha">https://github.com/Dshuishui/Nezha</a></p>
+                    <p><strong>项目地址:</strong> <a
+                            href="https://github.com/Dshuishui/Nezha">https://github.com/Dshuishui/Nezha</a></p>
                 </div>
             </div>
 
@@ -111,8 +136,79 @@
                 <p class="role">学生团队负责人 · 权威赛事项目</p>
                 <div class="details">
                     <p><strong>项目描述:</strong> 针对传统工业质检的精度和效率瓶颈，设计并实现了端云算力协同的工业产品智能质量检测方案。</p>
-                    <p><strong>技术实现:</strong> 系统基于YOLOv8算法和华为ModelArts平台，采用异构NPU+GPU异构训练模型，端侧支持开发板和鸿蒙APP双重部署，实现本地边缘推理与云端协同检测，配合可视化平台构建完整工业检测方案。</p>
+                    <p><strong>技术实现:</strong>
+                        系统基于YOLOv8算法和华为ModelArts平台，采用异构NPU+GPU异构训练模型，端侧支持开发板和鸿蒙APP双重部署，实现本地边缘推理与云端协同检测，配合可视化平台构建完整工业检测方案。
+                    </p>
                     <p><strong>项目成果:</strong> 获第十九届"挑战杯"华为云赛道国家级二等奖。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 论文发表 -->
+        <section class="section">
+            <h2>论文发表</h2>
+
+            <div class="paper-list">
+                <div class="paper-item">
+                    <h3 class="paper-title">Edge AI-driven neural network predictions for replica sync optimization</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">Applied Soft Computing</span>
+                        <span class="paper-date">2024-08-08</span>
+                        <span class="paper-type">Journal article</span>
+                        <span class="paper-level sci-top">SCI一区TOP</span>
+                    </div>
+                    <p class="paper-authors"><strong>Authors:</strong> Zichen Xu(导师); <strong>Yucong Dong</strong>;
+                        Junsheng Lou; Yangyang Wang(导师); Yan Fu</p>
+                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.asoc.2024.112083"
+                            target="_blank">10.1016/j.asoc.2024.112083</a></p>
+                </div>
+
+                <div class="paper-item">
+                    <h3 class="paper-title">Fair routing in MoE for distributed spatial data: a combinatorial
+                        multi-armed bandit solution</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">GeoInformatica</span>
+                        <span class="paper-date">2025-03-07</span>
+                        <span class="paper-type">Journal article</span>
+                        <span class="paper-level ccf-b">CCF B类期刊</span>
+                    </div>
+                    <p class="paper-authors"><strong>Authors:</strong> Yan Fu; Shasha Wang; <strong>Yucong
+                            Dong</strong>; Dan Wu; Juan Wang; Zichen Xu(导师)</p>
+                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10707-025-00541-3"
+                            target="_blank">10.1007/s10707-025-00541-3</a></p>
+                </div>
+
+                <div class="paper-item">
+                    <h3 class="paper-title">Dynamic Leader Scheduling with Enhanced QoS for Raft Under Cross-Domain
+                        Scenarios</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">2025 IEEE/ACM 33rd International Symposium on Quality of Service
+                            (IWQoS)</span>
+                        <span class="paper-date">2025-07-02</span>
+                        <span class="paper-type">Conference poster</span>
+                        <span class="paper-level ccf-b">CCF B类会议Poster</span>
+                    </div>
+                    <p class="paper-authors"><strong>Authors:</strong> Yangyang Wang(导师); Ziqian Cheng; <strong>Yucong
+                            Dong</strong>; Zichen Xu(导师)</p>
+                    <p class="paper-doi"><strong>DOI:</strong> <a
+                            href="https://doi.org/10.1109/iwqos65803.2025.11143451"
+                            target="_blank">10.1109/iwqos65803.2025.11143451</a></p>
+                </div>
+
+                <div class="paper-item">
+                    <h3 class="paper-title">SwitchFlow: Optimizing HPC Workflow Performance with Heterogeneous
+                        Serverless Frameworks</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">2024 IEEE 30th International Conference on Parallel and Distributed
+                            Systems (ICPADS)</span>
+                        <span class="paper-date">2024-10-10</span>
+                        <span class="paper-type">Conference paper</span>
+                        <span class="paper-level ccf-c">CCF C类会议</span>
+                    </div>
+                    <p class="paper-authors"><strong>Authors:</strong> Hao Chen; <strong>Yucong Dong</strong>; Xin Wen;
+                        Zichen Xu(导师)</p>
+                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1109/icpads63350.2024.00045"
+                            target="_blank">10.1109/icpads63350.2024.00045</a></p>
                 </div>
             </div>
         </section>
@@ -120,21 +216,23 @@
         <!-- 专业技能 -->
         <section class="section">
             <h2>专业技能</h2>
-            
+
             <div class="skills-container">
                 <div class="skill-item">
                     <span class="skill-bullet">•</span>
-                    <span class="skill-text">熟悉 Go、C 语言，能读写 Java、Python、Node.js、Vue 前后端开发代码；熟悉 Linux 基础操作指令，有服务器运维经验。</span>
+                    <span class="skill-text">熟悉 Go、C 语言，能读写 Java、Python、Node.js、Vue 前后端开发代码；熟悉 Linux
+                        基础操作指令，有服务器运维经验。</span>
                 </div>
-                
+
                 <div class="skill-item">
                     <span class="skill-bullet">•</span>
                     <span class="skill-text">熟悉分布式共识算法及其潜在优化点（Raft、Paxos等）；有部署和调试 Tikv 经验。</span>
                 </div>
-                
+
                 <div class="skill-item">
                     <span class="skill-bullet">•</span>
-                    <span class="skill-text">熟悉 gRPC 框架、GORM、MySQL、Redis、RocksDB 相关知识和基本操作；基本的数据结构与算法、计算机网络、操作系统知识。</span>
+                    <span class="skill-text">熟悉 gRPC 框架、GORM、MySQL、Redis、RocksDB
+                        相关知识和基本操作；基本的数据结构与算法、计算机网络、操作系统知识。</span>
                 </div>
             </div>
         </section>
@@ -142,7 +240,7 @@
         <!-- 获奖及其他成果 -->
         <section class="section">
             <h2>获奖及其他成果</h2>
-            
+
             <div class="awards-container">
                 <div class="award-category">
                     <h3>奖学金</h3>
@@ -153,7 +251,7 @@
                         <li>南昌大学 2025学年研究生创新奖学金 - 实践之星(全校6个名额)</li>
                     </ul>
                 </div>
-                
+
                 <div class="award-category">
                     <h3>国家级竞赛</h3>
                     <ul>
@@ -163,7 +261,7 @@
                         <li>2024华为开发者大赛中国区学生赛道，三等奖(队长)</li>
                     </ul>
                 </div>
-                
+
                 <div class="award-category">
                     <h3>省级竞赛</h3>
                     <ul>
@@ -172,7 +270,7 @@
                         <li>2025年中国高校计算机网络技术挑战赛-华中赛区，三等奖(队长)</li>
                     </ul>
                 </div>
-                
+
                 <div class="award-category">
                     <h3>其他</h3>
                     <ul>
@@ -188,6 +286,7 @@
         <footer>
             <div class="contact-info">
                 <p>GitHub: <a href="https://github.com/Dshuishui">https://github.com/Dshuishui</a></p>
+                <p>ORCID: <a href="https://orcid.org/0009-0002-6078-0590">https://orcid.org/0009-0002-6078-0590</a></p>
                 <p>邮箱: <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a></p>
                 <p>地址: 江西省南昌市</p>
             </div>
@@ -197,4 +296,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

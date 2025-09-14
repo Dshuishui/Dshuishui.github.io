@@ -23,30 +23,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 技能标签悬停效果
-    const skillTags = document.querySelectorAll('.skill');
-    skillTags.forEach(function(tag) {
-        tag.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-3px) scale(1.05)';
-        });
+    // const skillTags = document.querySelectorAll('.skill');
+    // skillTags.forEach(function(tag) {
+    //     tag.addEventListener('mouseenter', function() {
+    //         this.style.transform = 'translateY(-3px) scale(1.05)';
+    //     });
         
-        tag.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
+    //     tag.addEventListener('mouseleave', function() {
+    //         this.style.transform = 'translateY(0) scale(1)';
+    //     });
+    // });
 
     // 项目卡片悬停效果
-    const projectItems = document.querySelectorAll('.project-item');
-    projectItems.forEach(function(item) {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-            this.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.15)';
-        });
+    // const projectItems = document.querySelectorAll('.project-item');
+    // projectItems.forEach(function(item) {
+    //     item.addEventListener('mouseenter', function() {
+    //         this.style.transform = 'translateY(-5px)';
+    //         this.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.15)';
+    //     });
         
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = 'none';
-        });
-    });
+    //     item.addEventListener('mouseleave', function() {
+    //         this.style.transform = 'translateY(0)';
+    //         this.style.boxShadow = 'none';
+    //     });
+    // });
 
     // 平滑滚动到锚点
     const links = document.querySelectorAll('a[href^="#"]');
