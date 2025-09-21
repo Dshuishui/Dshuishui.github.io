@@ -71,18 +71,29 @@
 
             <div class="experience-item">
                 <div class="item-header">
-                    <h3>上海七牛信息技术有限公司 - 后端开发工程师（基础架构部）</h3>
+                    <h3>上海七牛信息技术有限公司</h3>
                     <span class="date">2025 年 07 月 - 2025 年 10 月</span>
                 </div>
                 <p class="position">基础架构 - 后端开发工程师</p>
                 <div class="details">
-                    <p><strong>项目开源:</strong> <a
+                    <p><strong>项目开源:</strong>
+                        <a
                             href="https://github.com/goplus/builder/tree/trailhead_sharing">https://github.com/goplus/builder/tree/trailhead_sharing</a>
+                        |
+                        <a
+                            href="https://github.com/goplus/builder/blob/trailhead_sharing/docs/develop/share/index.md">小组架构设计文档</a>
                     </p>
-                    <p><strong>应用技术:</strong> Vue.js、TypeScript、Go、YAP(XGO 生态的 DSL Web 框架)、GORM、MySQL、Redis、Kodo 对象存储</p>
-                    <p><strong>工作职责:</strong> 组长，负责 XBuilder 平台的社交分享、移动端适配、录屏管理等功能模块的设计与开发，支持微信等 5 个主流平台分享接口</p>
-                    <p><strong>具体贡献:</strong>
-                        提供录屏的前端展示及 CRUD、社交相关前后端支持。Model 层使用 GORM 定义 MySQL 数据模型，统一软删除和时间戳处理。在 Controller 层集中处理业务逻辑，注入各种服务。在 API 层基于 YAP 文件定义的 RESTful 接口，自动参数验证和错误处理
+                    <p><strong>应用技术:</strong> Vue.js 3、TypeScript、Go、YAP(<a href="https://github.com/goplus/xgo"
+                            target="_blank">XGO</a> 生态的 DSL Web 框架)、GORM、MySQL、Redis、Kodo 对象存储</p>
+                    </p>
+                    <p><strong>工作职责:</strong> 组长，主导设计并实现 XBuilder 平台的完整分享功能模块，解决用户分享体验不佳、传播效果有限的核心痛点，支持 QQ、微信、抖音、小红书、B站等
+                        5 个主流平台的一键分享能力</p>
+                    <p><strong>核心贡献:</strong>
+                        作为组长，统筹前后端开发工作，设计了包括核心功能模块层、UI 分享弹窗层、平台集成层和 API 服务层的完整架构。<strong>前端方面</strong>，基于 Vue 3 +
+                        TypeScript 实现了直接分享、截屏分享、录屏分享三种分享方式的交互流程，通过策略模式适配 5
+                        个主流平台的分享逻辑，设计了移动端虚拟键盘拖拽式编辑器支持自定义按键布局。<strong>后端方面</strong>，使用 GORM 设计了录屏记录的数据模型和生命周期管理，在
+                        Controller 层实现了录屏的创建、查询、统计等业务逻辑，基于 YAP 定义了 RESTful API 接口并集成 Kodo 对象存储服务。整体架构通过统一的
+                        PlatformConfig 接口标准化平台能力，实现了与主体系统的解耦设计
                     </p>
                 </div>
             </div>
@@ -97,11 +108,13 @@
                     <h3>服务器无感的强隔离高弹性一致性分布式存储系统</h3>
                     <span class="date">2023 年 12 月 - 2026 年 02 月</span>
                 </div>
-                <p class="role">学生小组负责人 · GOODLAB 课题</p>
+                <p class="role">学生小组负责人 - GOODLAB 课题</p>
                 <div class="details">
-                    <p><strong>项目描述:</strong> 针对服务器无感框架下函数级别分布式存储系统实现以及相关材料的撰写。</p>
+                    <p><strong>项目描述:</strong> 国家重点研发计划子课题（GOODLAB
+                        课题），针对服务器无感框架下函数级别计算对分布式数据一致性的差异化需求，以及传统一致性方案在性能与可靠性间的权衡问题，本项目实现了融合因果一致性与强一致性的混合分布式存储系统。</p>
                     <p><strong>技术实现:</strong>
-                        系统基于 Raft 算法构建一致层，基于 CRDTs 支持因果一致性，通过 Gossip 协议维护因果关系。核心创新在于利用 LSTM 神经网络分析节点问题式和网络拓扑变化，预测最优副本同步策略，实现强一致性与弱一致性的混合分布式存储系统。
+                        系统基于 Raft 算法构建一致性层，基于 CRDTs 支持因果一致性，通过 Gossip 协议维护因果关系。核心创新在于利用 LSTM
+                        神经网络分析节点访问模式和网络拓扑变化，预测最优副本同步策略，实现强一致性与因果一致性的自适应切换。
                     </p>
                     <p><strong>项目成果:</strong> SCI 一区期刊论文 1 篇，一项发明专利。</p>
                 </div>
@@ -115,10 +128,12 @@
                 <p class="role">个人科研课题实现</p>
                 <div class="details">
                     <p><strong>项目描述:</strong>
-                        基于 Raft 的分布式键值存储系统在使用 LSM-tree 存储引擎时存在写放大问题：每个数据写操作至少需要三次磁盘写入 (Raft 日志持久化、WAL 日志、Memtable 持久化)，以及 LSM-tree 后台压缩过程的多层数据合并重写。
+                        个人科研课题。基于 Raft 的分布式键值存储系统在使用 LSM-tree 存储引擎时存在写放大问题：每个数据写操作至少需要三次磁盘写入（Raft 日志持久化、WAL 日志、Memtable
+                        持久化），以及 LSM-tree 后台压缩过程的多层数据合并重写。
                     </p>
                     <p><strong>技术实现:</strong>
-                        设计并实现了 Nezha，一种原创分布式键值分离存储系统。在 Raft 日志处理阶段实现 KV 分离以减少写放大，系统核心创新在于设计了自适应垃圾回收 (GC) 框架，通过多轮 GC 策略动态平衡 KV 分离带来的读性能损耗，同时实现 GC 版本隔离，保证数据处理的正确性。
+                        本项目设计并实现了 Nezha，一种原创分布式键值分离存储系统。在 Raft 日志处理阶段实现 KV 分离以减少写放大。系统核心创新在于设计了自适应垃圾回收（GC）框架，通过多轮 GC
+                        策略动态平衡 KV 分离带来的读性能损耗，同时实现 GC 版本隔离，保证数据处理的正确性。结合优化的 Raft 日志批量同步和多协程并发处理等优化，系统在高并发场景下表现出不错的读写平衡性能。
                     </p>
                     <p><strong>项目成果:</strong> CCF A 类会议在投。</p>
                     <p><strong>项目地址:</strong> <a
@@ -131,11 +146,12 @@
                     <h3>端云协同驱动的工业产品质量检测系统</h3>
                     <span class="date">2024 年 05 月 - 2024 年 11 月</span>
                 </div>
-                <p class="role">学生团队负责人 · 权威赛事项目</p>
+                <p class="role">学生团队负责人 - 权威赛事项目</p>
                 <div class="details">
-                    <p><strong>项目描述:</strong> 针对传统工业质检的精度和效率瓶颈，设计并实现了端云算力协同的工业产品智能质量检测方案。</p>
+                    <p><strong>项目描述:</strong> 权威企业赛事。针对传统工业质检的精度和效率瓶颈，本项目设计并实现了端云算力协同的工业产品智能质量检测方案。</p>
                     <p><strong>技术实现:</strong>
-                        系统基于 YOLOv8 算法和华为 ModelArts 平台，采用异构 NPU+GPU 异构训练模型，端侧支持开发板和鸿蒙 APP 双重部署，实现本地边缘推理与云端协同检测，配合可视化平台构建完整工业检测方案。
+                        系统基于 YOLOv8 算法和华为 ModelArts 平台，采用异腾 NPU+GPU
+                        异构训练模型，端侧支持开发板和鸿蒙APP双重部署，实现本地边缘推理与云端协同检测，配合可视化平台构建完整工业检测方案。项目获第十九届"挑战杯"华为云赛道国家级二等奖。
                     </p>
                     <p><strong>项目成果:</strong> 获第十九届"挑战杯"华为云赛道国家级二等奖。</p>
                 </div>
@@ -217,7 +233,8 @@
 
             <div class="skills-container">
                 <div class="skill-category">
-                    <div class="skill-item">熟悉 Go、C 语言，能读写 Java、Python、Node.js、Vue 前后端开发代码；熟悉 Linux 基础操作指令，有服务器运维经验。</div>
+                    <div class="skill-item">熟悉 Go、C 语言，能读写 Java、Python、Node.js、Vue 前后端开发代码；熟悉 Linux 基础操作指令，有服务器运维经验。
+                    </div>
                     <div class="skill-item">熟悉分布式共识算法及其潜在优化点（Raft、Paxos 等）；有部署和调试 Tikv 经验。</div>
                     <div class="skill-item">熟悉 gRPC 框架、GORM、MySQL、Redis、RocksDB 相关知识和基本操作；基本的数据结构与算法、计算机网络、操作系统知识。</div>
                 </div>
@@ -257,6 +274,35 @@
                     <div>软件设计师</div>
                     <div>英语六级</div>
                     <div>优秀学生党员</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社会服务 -->
+        <section class="section">
+            <h2>社会服务</h2>
+
+            <div class="service-container">
+                <div class="service-item">
+                    <div class="item-header">
+                        <h3>2023年中国计算机学会计算机系统大会（CCFSys 2023）</h3>
+                        <span class="date">2023 年</span>
+                    </div>
+                    <p class="role">重要学生组织者 · 核心志愿者</p>
+                    <div class="details">
+                        <p>以导师为会议举办的主要负责人，我作为重要学生组织者兼核心志愿者，负责多个会场的秩序管理，为大会的顺利进行做出了重要贡献。</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="item-header">
+                        <h3>井冈山红色文化研学活动</h3>
+                        <span class="date">2024 年 08 月</span>
+                    </div>
+                    <p class="role">主要学生组织者</p>
+                    <div class="details">
+                        <p>以导师为领头人，作为主要学生组织者之一，参与策划该活动，增进了团队凝聚力，深化了对革命精神的理解。</p>
+                    </div>
                 </div>
             </div>
         </section>
