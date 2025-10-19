@@ -562,3 +562,18 @@ footer {
   font-style: italic;
   line-height: 1.4;
 }
+
+.hobby-info, .self-evaluation {
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.hobby-info strong, .self-evaluation strong {
+  color: #2c3e50;
+}
+
+.self-evaluation {
+  max-width: 1200px;
+}
