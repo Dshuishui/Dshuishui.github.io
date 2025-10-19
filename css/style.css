@@ -542,3 +542,23 @@ footer {
   margin-bottom: 12px;
   font-weight: 600;
 }
+
+.award-category li,
+.award-category > div:not(h3) {
+  background: #ffffff;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.9em;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.award-organizer {
+  color: #7f8c8d;
+  font-size: 0.85em;
+  margin-top: 4px;
+  font-style: italic;
+  line-height: 1.4;
+}

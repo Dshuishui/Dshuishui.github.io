@@ -74,26 +74,29 @@
                     <h3>上海七牛信息技术有限公司</h3>
                     <span class="date">2025 年 07 月 - 2025 年 10 月</span>
                 </div>
-                <p class="position">基础架构 - 后端开发工程师</p>
+                <p class="position">基础架构部门 - 后端开发工程师</p>
                 <div class="details">
                     <p><strong>项目开源:</strong>
                         <a
                             href="https://github.com/goplus/builder/tree/trailhead_sharing">https://github.com/goplus/builder/tree/trailhead_sharing</a>
                         |
                         <a
-                            href="https://github.com/goplus/builder/blob/trailhead_sharing/docs/develop/share/index.md">小组架构设计文档</a>
+                            href="https://github.com/goplus/builder/blob/trailhead_sharing/docs/develop/share/index.md">小组架构设计文档；</a>
                     </p>
                     <p><strong>应用技术:</strong> Vue.js 3、TypeScript、Go、YAP(<a href="https://github.com/goplus/xgo"
-                            target="_blank">XGO</a> 生态的 DSL Web 框架)、GORM、MySQL、Redis、Kodo 对象存储</p>
+                            target="_blank">XGO</a> 生态的 DSL Web 框架)、GORM、MySQL、Redis、Kodo 对象存储；</p>
                     </p>
                     <p><strong>工作职责:</strong> 组长，主导设计并实现 XBuilder 平台的完整分享功能模块，解决用户分享体验不佳、传播效果有限的核心痛点，支持 QQ、微信、抖音、小红书、B站等
-                        5 个主流平台的一键分享能力</p>
+                        5 个主流平台的一键分享图片和视频的能力；</p>
                     <p><strong>核心贡献:</strong>
                         作为组长，统筹前后端开发工作，设计了包括核心功能模块层、UI 分享弹窗层、平台集成层和 API 服务层的完整架构。<strong>前端方面</strong>，基于 Vue 3 +
                         TypeScript 实现了直接分享、截屏分享、录屏分享三种分享方式的交互流程，通过策略模式适配 5
                         个主流平台的分享逻辑，设计了移动端虚拟键盘拖拽式编辑器支持自定义按键布局。<strong>后端方面</strong>，使用 GORM 设计了录屏记录的数据模型和生命周期管理，在
                         Controller 层实现了录屏的创建、查询、统计等业务逻辑，基于 YAP 定义了 RESTful API 接口并集成 Kodo 对象存储服务。整体架构通过统一的
-                        PlatformConfig 接口标准化平台能力，实现了与主体系统的解耦设计
+                        PlatformConfig 接口标准化平台能力，实现了与主体系统的解耦设计。
+                    </p>
+                    <p><strong>实习心得:</strong>
+                        通过XLink项目的开发实践，深刻认识到产品开发中决策层次的重要性：产品定位与用户决策决定"做什么"，系统架构与技术选型决定"怎么做"，接口设计与开发流程决定"如何协作"，而代码实现只是将决策落地的最后环节。在项目中，我们基于用户调研将目标定位为游戏创作者而非编程教育者，放弃了技术上可行的录屏功能，专注核心分享需求；在架构设计上遵循模块独立性和"拿来就用"原则，采用接口先行的开发模式确保前后端并行开发。这次经历让我从单纯的功能实现者成长为能够进行产品和技术决策的工程师，认识到优秀程序员应该是产品价值的创造者，而非仅仅是代码的搬运工。
                     </p>
                 </div>
             </div>
@@ -125,19 +128,19 @@
                     <h3>基于 Raft 优化的键值分离分布式存储系统</h3>
                     <span class="date">2024 年 06 月 - 至今</span>
                 </div>
-                <p class="role">个人科研课题实现</p>
+                <p class="role">独自实现 - 个人科研课题</p>
                 <div class="details">
+                    <p><strong>项目地址:</strong> <a
+                            href="https://github.com/Dshuishui/Nezha">https://github.com/Dshuishui/Nezha；</a></p>
                     <p><strong>项目描述:</strong>
                         个人科研课题。基于 Raft 的分布式键值存储系统在使用 LSM-tree 存储引擎时存在写放大问题：每个数据写操作至少需要三次磁盘写入（Raft 日志持久化、WAL 日志、Memtable
-                        持久化），以及 LSM-tree 后台压缩过程的多层数据合并重写。
+                        持久化），以及 LSM-tree 后台压缩过程的多层数据合并重写；
                     </p>
                     <p><strong>技术实现:</strong>
                         本项目设计并实现了 Nezha，一种原创分布式键值分离存储系统。在 Raft 日志处理阶段实现 KV 分离以减少写放大。系统核心创新在于设计了自适应垃圾回收（GC）框架，通过多轮 GC
-                        策略动态平衡 KV 分离带来的读性能损耗，同时实现 GC 版本隔离，保证数据处理的正确性。结合优化的 Raft 日志批量同步和多协程并发处理等优化，系统在高并发场景下表现出不错的读写平衡性能。
+                        策略动态平衡 KV 分离带来的读性能损耗，同时实现 GC 版本隔离，保证数据处理的正确性。结合优化的 Raft 日志批量同步和多协程并发处理等优化，系统在高并发场景下表现出不错的读写平衡性能；
                     </p>
                     <p><strong>项目成果:</strong> CCF A 类会议在投。</p>
-                    <p><strong>项目地址:</strong> <a
-                            href="https://github.com/Dshuishui/Nezha">https://github.com/Dshuishui/Nezha</a></p>
                 </div>
             </div>
 
@@ -256,22 +259,47 @@
 
                 <div class="award-category">
                     <h3>国家级竞赛</h3>
-                    <div>第十九届"挑战杯"全国大学生课外学术科技作品竞赛"揭榜挂帅"专项赛，二等奖(队长)</div>
-                    <div>第二十一届中国研究生数学建模竞赛，三等奖</div>
-                    <div>第六届上海交大-卫宁健康智慧医疗挑战赛，三等奖</div>
-                    <div>2024 华为开发者大赛中国区学生赛道，三等奖(队长)</div>
+                    <div>
+                        2024 第十九届"挑战杯"全国大学生课外学术科技作品竞赛"揭榜挂帅"专项赛，二等奖(队长)
+                        <div class="award-organizer">主办方：共青团中央、中国科协、中国社会科学院、教育部和全国学联</div>
+                    </div>
+                    <div>
+                        2024 第二十一届中国研究生数学建模竞赛，三等奖
+                        <div class="award-organizer">主办方：中国学位与研究生教育学会、中国科协青少年科技中心</div>
+                    </div>
+                    <div>
+                        2023 第六届上海交大-卫宁健康智慧医疗挑战赛，三等奖
+                        <div class="award-organizer">指导单位：上海市计算机学会<br>承办方：上海交通大学计算机科学与工程系、卫宁健康和上海交大-卫宁健康联合实验室</div>
+                    </div>
+                    <div>
+                        2024 华为开发者大赛中国区学生赛道，三等奖(队长)
+                        <div class="award-organizer">华为ICT领域面向全球的顶级开发者赛事</div>
+                    </div>
                 </div>
 
                 <div class="award-category">
                     <h3>省级竞赛</h3>
-                    <div>2024 "数据要素X" 大赛江西分赛，三等奖</div>
-                    <div>2025 华为软件精英挑战赛-杭厦赛区，三等奖</div>
-                    <div>2025 年中国高校计算机网络技术挑战赛-华中赛区，三等奖(队长)</div>
+                    <div>
+                        2024 "数据要素X" 大赛江西分赛，二等奖
+                        <div class="award-organizer">指导单位：国家数据局、江西省人民政府<br>主办方：江西省发展和改革委员会、江西省人民政府办公厅、江西省教育厅等</div>
+                    </div>
+                    <div>
+                        2025 华为软件精英挑战赛-杭厦赛区，三等奖
+                        <div class="award-organizer">华为公司面向全球高校软件精英的顶级赛事</div>
+                    </div>
+                    <div>
+                        2025 中国高校计算机网络技术挑战赛-华中赛区，三等奖(队长)
+                        <div class="award-organizer">主办方：教育部高等学校计算机类专业教学指导委员会、教育部高等学校软件工程专业教学指导委员会、全国高等学校计算机教育研究会</div>
+                    </div>
                 </div>
+
 
                 <div class="award-category">
                     <h3>其他</h3>
-                    <div>软件设计师</div>
+                    <div>
+                        软件设计师
+                        <div class="award-organizer">全国计算机技术与软件专业技术资格（水平）考试</div>
+                    </div>
                     <div>英语六级</div>
                     <div>优秀学生党员</div>
                 </div>
