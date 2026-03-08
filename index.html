@@ -16,7 +16,7 @@
                 <img src="images/me.jpg" alt="董余聪" class="profile-img">
                 <div class="profile-info">
                     <h1>董余聪</h1>
-                    <p class="subtitle">南昌大学 · 计算机科学与技术 · 硕士研究生 · 中共党员</p>
+                    <p class="subtitle">上海交通大学 · 计算机科学与技术 · 博士研究生 · 中共党员</p>
                     <p class="github-info">
                         <strong>Email:</strong> <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a>
                     </p>
@@ -27,6 +27,10 @@
                     <p class="github-info">
                         <strong>ORCID:</strong> <a href="https://orcid.org/0009-0002-6078-0590"
                             target="_blank">https://orcid.org/0009-0002-6078-0590</a>
+                    </p>
+                    <p class="github-info">
+                        <strong>CSDN:</strong> <a href="https://blog.csdn.net/qq_45913026?type=blog"
+                            target="_blank">https://blog.csdn.net/qq_45913026?type=blog</a>
                     </p>
                     <p class="intro">
                         专注于并行与分布式软件系统，热衷于系统架构设计与性能优化，具有项目实践经验。
@@ -48,15 +52,24 @@
 
             <div class="education-item">
                 <div class="item-header">
+                    <h3>上海交通大学 - 计算机科学与技术 - 博士</h3>
+                    <span class="date">2026 年 09 月 - 2030 年 06 月</span>
+                </div>
+                <p class="institution">导师: 王肇国、吴明瑜</p>
+                <p class="details">祝我顺利上岸！</p>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
                     <h3>南昌大学 - 计算机科学与技术 - 硕士</h3>
                     <span class="date">2023 年 09 月 - 2026 年 06 月</span>
                 </div>
                 <p class="institution">导师: 徐子晨、王洋洋 · GOODLAB 数据分析与优化实验室（good.ncu.edu.cn）</p>
                 <div class="details">
                     <p><strong>综合排名:</strong> 前 2% · 研究方向: 并行与分布式软件系统</p>
-                    <p><strong>学术成果:</strong> CCF A 类存储系统相关会议在投，SCI 一区 TOP 论文 1 篇，发明专利 1 项</p>
+                    <p><strong>学术成果:</strong> CCF A 类会议 ICDE 2026 录用 1 篇，SCI 一区 TOP 论文 1 篇，发明专利 2 项</p>
                     <p><strong>外文书籍:</strong> 《Distributed Data Services: Fundamentals and
-                        Practices》，Springer出版社，承担撰写第 4-7 章节</p>
+                        Practices》，Springer出版社，承担撰写第 4-8 章节</p>
                 </div>
             </div>
 
@@ -152,7 +165,7 @@
                         本项目设计并实现了 Nezha，一种原创分布式键值分离存储系统。在 Raft 日志处理阶段实现 KV 分离以减少写放大。系统核心创新在于设计了自适应垃圾回收（GC）框架，通过多轮 GC
                         策略动态平衡 KV 分离带来的读性能损耗，同时实现 GC 版本隔离，保证数据处理的正确性。结合优化的 Raft 日志批量同步和多协程并发处理等优化，系统在高并发场景下表现出不错的读写平衡性能；
                     </p>
-                    <p><strong>项目成果:</strong> CCF A 类会议在投。</p>
+                    <p><strong>项目成果:</strong> 已被 ICDE 2026（CCF A 类会议）录用。</p>
                 </div>
             </div>
 
@@ -179,32 +192,29 @@
 
             <div class="paper-list">
                 <div class="paper-item">
-                    <h3 class="paper-title">Edge AI-driven neural network predictions for replica sync optimization</h3>
+                    <h3 class="paper-title">CD-Raft: Reducing the Latency of Distributed Consensus in Cross-Domain Sites
+                    </h3>
                     <div class="paper-info">
-                        <span class="paper-venue">Applied Soft Computing</span>
-                        <span class="paper-date">2024-08-08</span>
-                        <span class="paper-type">Journal article</span>
-                        <span class="paper-level sci-top">SCI 一区 TOP</span>
+                        <span class="paper-venue">2026 IEEE INFOCOM</span>
+                        <span class="paper-date">已录用，待发表</span>
+                        <span class="paper-type">Conference paper</span>
+                        <span class="paper-level ccf-a">CCF A 类会议</span>
                     </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Zichen Xu(导师); <strong>Yucong Dong</strong>;
-                        Junsheng Lou; Yangyang Wang(导师); Yan Fu</p>
-                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.asoc.2024.112083"
-                            target="_blank">10.1016/j.asoc.2024.112083</a></p>
+                    <p class="paper-authors"><strong>Authors:</strong> Yangyang Wang(导师); Ziqian Cheng; <strong>Yucong
+                            Dong(学生二作)</strong>; Zichen Xu(导师), et al.</p>
                 </div>
 
                 <div class="paper-item">
-                    <h3 class="paper-title">Fair routing in MoE for distributed spatial data: a combinatorial
-                        multi-armed bandit solution</h3>
+                    <h3 class="paper-title">Nezha: Optimizing Raft-Based Distributed KV Store with KV Separation and
+                        Adaptive GC</h3>
                     <div class="paper-info">
-                        <span class="paper-venue">GeoInformatica</span>
-                        <span class="paper-date">2025-03-07</span>
-                        <span class="paper-type">Journal article</span>
-                        <span class="paper-level ccf-b">CCF B 类期刊</span>
+                        <span class="paper-venue">ICDE 2026</span>
+                        <span class="paper-date">已录用，待发表</span>
+                        <span class="paper-type">Conference paper</span>
+                        <span class="paper-level ccf-a">CCF A 类会议</span>
                     </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Yan Fu; Shasha Wang; <strong>Yucong
-                            Dong</strong>; Dan Wu; Juan Wang; Zichen Xu(导师)</p>
-                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10707-025-00541-3"
-                            target="_blank">10.1007/s10707-025-00541-3</a></p>
+                    <p class="paper-authors"><strong>Authors:</strong> <strong>Yucong Dong(学生一作)</strong>; Zichen
+                        Xu(导师); Yangyang Wang(导师), et al.</p>
                 </div>
 
                 <div class="paper-item">
@@ -225,6 +235,21 @@
                 </div>
 
                 <div class="paper-item">
+                    <h3 class="paper-title">Fair routing in MoE for distributed spatial data: a combinatorial
+                        multi-armed bandit solution</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">GeoInformatica</span>
+                        <span class="paper-date">2025-03-07</span>
+                        <span class="paper-type">Journal article</span>
+                        <span class="paper-level ccf-b">CCF B 类期刊</span>
+                    </div>
+                    <p class="paper-authors"><strong>Authors:</strong> Yan Fu; Shasha Wang; <strong>Yucong
+                            Dong</strong>; Dan Wu; Juan Wang; Zichen Xu(导师)</p>
+                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10707-025-00541-3"
+                            target="_blank">10.1007/s10707-025-00541-3</a></p>
+                </div>
+
+                <div class="paper-item">
                     <h3 class="paper-title">SwitchFlow: Optimizing HPC Workflow Performance with Heterogeneous
                         Serverless Frameworks</h3>
                     <div class="paper-info">
@@ -238,6 +263,46 @@
                         Zichen Xu(导师)</p>
                     <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1109/icpads63350.2024.00045"
                             target="_blank">10.1109/icpads63350.2024.00045</a></p>
+                </div>
+
+                <div class="paper-item">
+                    <h3 class="paper-title">Edge AI-driven neural network predictions for replica sync optimization</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">Applied Soft Computing</span>
+                        <span class="paper-date">2024-08-08</span>
+                        <span class="paper-type">Journal article</span>
+                        <span class="paper-level sci-top">SCI 一区 TOP</span>
+                    </div>
+                    <p class="paper-authors"><strong>Authors:</strong> Zichen Xu(导师); <strong>Yucong
+                            Dong(学生一作)</strong>;
+                        Junsheng Lou; Yangyang Wang(导师); Yan Fu</p>
+                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.asoc.2024.112083"
+                            target="_blank">10.1016/j.asoc.2024.112083</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 发明专利 -->
+        <section class="section">
+            <h2>发明专利</h2>
+
+            <div class="paper-list">
+                <div class="paper-item">
+                    <h3 class="paper-title">基于异构磁盘的分布式存储优化方法、系统、设备及介质</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">发明专利</span>
+                        <span class="paper-date">申请号：202511948464X</span>
+                    </div>
+                    <p class="paper-authors"><strong>发明人：</strong>王洋洋(导师); 苏义栋; <strong>董余聪(学生二作)</strong>; 徐子晨; 马帅</p>
+                </div>
+
+                <div class="paper-item">
+                    <h3 class="paper-title">一种具备动态优化复制策略的混合一致性方法和系统</h3>
+                    <div class="paper-info">
+                        <span class="paper-venue">发明专利</span>
+                        <span class="paper-date">申请号：202410080913.2</span>
+                    </div>
+                    <p class="paper-authors"><strong>发明人：</strong>徐子晨(导师); 娄俊升; <strong>董余聪(学生二作)</strong></p>
                 </div>
             </div>
         </section>
@@ -263,10 +328,12 @@
             <div class="awards-container">
                 <div class="award-category">
                     <h3>奖学金</h3>
-                    <div>南昌大学 2024 学年国家奖学金</div>
-                    <div>南昌大学 2024 学年一等学业奖学金</div>
-                    <div>南昌大学 2025 学年特等学业奖学金</div>
-                    <div>南昌大学 2025 学年研究生创新奖学金 - 实践之星(全校 6 个名额)</div>
+                    <div>南昌大学 2024-2025 学年国家奖学金</div>
+                    <div>南昌大学 2023-2024 学年一等学业奖学金</div>
+                    <div>南昌大学 2025-2026 学年江西省政府奖学金</div>
+                    <div>南昌大学 2024-2025 学年特等学业奖学金</div>
+                    <div>南昌大学 2025-2026 学年特等学业奖学金</div>
+                    <div>南昌大学 2024-2025 学年研究生创新奖学金 - 实践之星(全校 6 个名额)</div>
                 </div>
 
                 <div class="award-category">
@@ -332,3 +399,23 @@
                     <div class="details">
                         <p>以导师为会议举办的主要负责人，我作为重要学生组织者兼核心志愿者，负责多个会场的秩序管理，为大会的顺利进行做出了重要贡献。</p>
                     </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Dshuishui"
+                        target="_blank">https://github.com/Dshuishui</a></p>
+            </div>
+            <p class="copyright">&copy; 2025 董余聪 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
