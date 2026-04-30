@@ -1,420 +1,420 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>董余聪 - 个人主页</title>
+    <title>Yucong Dong (董余聪) · Distributed Systems Researcher</title>
+    <meta name="description" content="董余聪（Yucong Dong）的个人学术主页。上海交通大学计算机科学博士生，研究方向：并行与分布式软件系统、Raft 共识算法、键值存储系统优化。发表 CCF A 类会议论文 2 篇（ICDE 2026、INFOCOM 2026），SCI 一区 TOP 期刊论文 1 篇。">
+    <meta name="keywords" content="董余聪, Yucong Dong, 分布式系统, Raft, 键值存储, ICDE 2026, INFOCOM 2026, 上海交通大学, 南昌大学, distributed systems, consensus algorithm, key-value storage, Nezha">
+    <meta name="author" content="Yucong Dong">
+    <link rel="canonical" href="https://dshuishui.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Yucong Dong (董余聪) · Personal Homepage">
+    <meta property="og:description" content="Ph.D. Student at Shanghai Jiao Tong University. Research: distributed systems, Raft consensus, key-value storage. CCF-A papers at ICDE 2026 & INFOCOM 2026.">
+    <meta property="og:url" content="https://dshuishui.github.io/">
+    <meta property="og:image" content="https://dshuishui.github.io/images/me.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="profile:first_name" content="Yucong">
+    <meta property="profile:last_name" content="Dong">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Yucong Dong (董余聪)">
+    <meta name="twitter:description" content="Ph.D. Student at SJTU. Distributed systems, Raft, key-value storage. CCF-A: ICDE 2026 & INFOCOM 2026.">
+    <meta name="twitter:image" content="https://dshuishui.github.io/images/me.jpg">
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yucong Dong",
+      "alternateName": "董余聪",
+      "jobTitle": "Ph.D. Student",
+      "description": "Researcher in parallel and distributed software systems, specializing in Raft consensus algorithms and key-value storage optimization.",
+      "url": "https://dshuishui.github.io/",
+      "email": "dyucong@email.ncu.edu.cn",
+      "image": "https://dshuishui.github.io/images/me.jpg",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Shanghai Jiao Tong University",
+        "alternateName": "上海交通大学"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Nanchang University",
+        "alternateName": "南昌大学"
+      },
+      "sameAs": [
+        "https://github.com/Dshuishui",
+        "https://orcid.org/0009-0002-6078-0590"
+      ],
+      "knowsAbout": [
+        "Distributed Systems",
+        "Raft Consensus Algorithm",
+        "Key-Value Storage",
+        "Serverless Computing",
+        "Parallel Computing",
+        "LSM-tree",
+        "CRDTs"
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="container">
-        <!-- 个人介绍 -->
-        <header>
-            <div class="profile-section">
-                <img src="images/me.jpg" alt="董余聪" class="profile-img">
-                <div class="profile-info">
-                    <h1>董余聪</h1>
-                    <p class="subtitle">上海交通大学 · 计算机科学与技术 · 博士研究生 · 中共党员</p>
-                    <p class="github-info">
-                        <strong>Email:</strong> <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a>
-                    </p>
-                    <p class="github-info">
-                        <strong>GitHub:</strong> <a href="https://github.com/Dshuishui"
-                            target="_blank">https://github.com/Dshuishui</a>
-                    </p>
-                    <p class="github-info">
-                        <strong>ORCID:</strong> <a href="https://orcid.org/0009-0002-6078-0590"
-                            target="_blank">https://orcid.org/0009-0002-6078-0590</a>
-                    </p>
-                    <p class="github-info">
-                        <strong>CSDN:</strong> <a href="https://blog.csdn.net/qq_45913026?type=blog"
-                            target="_blank">https://blog.csdn.net/qq_45913026?type=blog</a>
-                    </p>
-                    <p class="intro">
-                        专注于并行与分布式软件系统，热衷于系统架构设计与性能优化，具有项目实践经验。
-                    </p>
-                    <p class="hobby-info">
-                        <strong>兴趣爱好:</strong> 健身（握推85KG）、桌球、羽毛球、乒乓球、游泳
-                    </p>
-                    <p class="self-evaluation">
-                        <strong>自我评价:</strong>
-                        广泛的知识储备，具备软件开发、性能优化实践经验；坚定的抗压能力，能够承受工作压力，有较高的执行力；扎实的文字功底，曾参与过多个国家级、省级项目的申报书、结题报告等文字材料撰写。
-                    </p>
-                </div>
-            </div>
-        </header>
 
-        <!-- 教育经历 -->
-        <section class="section">
-            <h2>教育经历</h2>
+<div class="layout">
 
-            <div class="education-item">
-                <div class="item-header">
-                    <h3>上海交通大学 - 计算机科学与技术 - 博士</h3>
-                    <span class="date">2026 年 09 月 - 2030 年 06 月</span>
-                </div>
-                <p class="institution">导师: 王肇国、吴明瑜</p>
-                <p class="details">祝我顺利上岸！</p>
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <img src="images/me.jpg" alt="董余聪" class="avatar">
+            <h1 class="sidebar-name">董余聪</h1>
+            <div class="sidebar-name-en">Yucong Dong</div>
+            <div class="sidebar-role">博士研究生 · 中共党员</div>
+            <div class="sidebar-affil">上海交通大学</div>
+            <div class="sidebar-dept">计算机科学与技术</div>
+
+            <div class="contact-links">
+                <a href="mailto:dyucong@email.ncu.edu.cn" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email
+                </a>
+                <a href="https://github.com/Dshuishui" target="_blank" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://orcid.org/0009-0002-6078-0590" target="_blank" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    ORCID
+                </a>
+                <a href="https://blog.csdn.net/qq_45913026?type=blog" target="_blank" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    CSDN Blog
+                </a>
             </div>
 
-            <div class="education-item">
-                <div class="item-header">
-                    <h3>南昌大学 - 计算机科学与技术 - 硕士</h3>
-                    <span class="date">2023 年 09 月 - 2026 年 06 月</span>
-                </div>
-                <p class="institution">导师: 徐子晨、王洋洋 · GOODLAB 数据分析与优化实验室（good.ncu.edu.cn）</p>
-                <div class="details">
-                    <p><strong>综合排名:</strong> 前 2% · 研究方向: 并行与分布式软件系统</p>
-                    <p><strong>学术成果:</strong> CCF A 类会议 ICDE 2026 录用 1 篇，SCI 一区 TOP 论文 1 篇，发明专利 2 项</p>
-                    <p><strong>外文书籍:</strong> 《Distributed Data Services: Fundamentals and
-                        Practices》，Springer出版社，承担撰写第 4-8 章节</p>
-                </div>
+            <nav class="side-nav">
+                <div class="side-nav-label">导航</div>
+                <a href="#about">关于我</a>
+                <a href="#education">教育经历</a>
+                <a href="#publications">论文发表</a>
+                <a href="#patents">发明专利</a>
+                <a href="#experience">实习经历</a>
+                <a href="#projects">项目经历</a>
+                <a href="#awards">获奖情况</a>
+                <a href="#skills">专业技能</a>
+                <a href="#service">社会服务</a>
+            </nav>
+
+            <div class="sidebar-hobbies">
+                <div class="hobbies-label">兴趣爱好</div>
+                <div class="hobbies-content">健身（握推 85KG）· 桌球 · 羽毛球 · 乒乓球 · 游泳</div>
             </div>
-
-            <div class="education-item">
-                <div class="item-header">
-                    <h3>南昌大学科学技术学院 - 计算机科学与技术 - 本科</h3>
-                    <span class="date">2019 年 09 月 - 2023 年 06 月</span>
-                </div>
-                <div class="details">
-                    <p><strong>综合排名:</strong> 1/288 · 2023 届优秀毕业生</p>
-                    <p><strong>获奖情况:</strong> 特等奖学金 3 次，一等奖学金 4 次，英语六级</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 实习经历 -->
-        <section class="section">
-            <h2>实习经历</h2>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <h3>上海七牛信息技术有限公司</h3>
-                    <span class="date">2025 年 07 月 - 2025 年 10 月</span>
-                </div>
-                <p class="position">基础架构部门 - 后端开发工程师</p>
-                <div class="details">
-                    <p><strong>项目开源:</strong>
-                        <a
-                            href="https://github.com/goplus/builder/tree/trailhead_sharing">https://github.com/goplus/builder/tree/trailhead_sharing</a>
-                        |
-                        <a
-                            href="https://github.com/goplus/builder/blob/trailhead_sharing/docs/develop/share/index.md">小组架构设计文档；</a>
-                    </p>
-                    <p><strong>应用技术:</strong> Vue.js 3、TypeScript、Go、YAP(<a href="https://github.com/goplus/xgo"
-                            target="_blank">XGO</a> 生态的 DSL Web 框架)、GORM、MySQL、Redis、Kodo 对象存储；</p>
-                    </p>
-                    <p><strong>工作职责:</strong> 七牛 1024 训练营 XLink 小组组长，主导设计并实现 XBuilder
-                        平台的完整分享功能模块，解决用户分享体验不佳、传播效果有限的核心痛点，支持 QQ、微信、抖音、小红书、B站等
-                        5 个主流平台的一键分享图片和视频的能力；</p>
-                    <p><strong>核心贡献:</strong>
-                        作为组长，统筹前后端开发工作，设计了包括核心功能模块层、UI 分享弹窗层、平台集成层和 API 服务层的完整架构。<strong>前端方面</strong>，基于 Vue 3 +
-                        TypeScript 实现了直接分享、截屏分享、录屏分享三种分享方式的交互流程，通过策略模式适配 5
-                        个主流平台的分享逻辑，设计了移动端虚拟键盘拖拽式编辑器支持自定义按键布局。<strong>后端方面</strong>，使用 GORM 设计了录屏记录的数据模型和生命周期管理，在
-                        Controller 层实现了录屏的创建、查询、统计等业务逻辑，基于 YAP 定义了 RESTful API 接口并集成 Kodo 对象存储服务。整体架构通过统一的
-                        PlatformConfig 接口标准化平台能力，实现了与主体系统的解耦设计。
-                    </p>
-                    <p><strong>个人贡献:</strong>
-                        <a href="https://github.com/goplus/builder/pulls?q=is%3Apr+author%3ADshuishui+is%3Aclosed"
-                            target="_blank">XBuilder 项目个人 PR 贡献记录</a>
-                    </p>
-                    <p><strong>实习心得:</strong>
-                        <a href="https://mp.weixin.qq.com/s/Uo5mSNofM2j1XXK3uevJwA" target="_blank">相关文章</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 项目经历 -->
-        <section class="section">
-            <h2>项目经历</h2>
-
-            <div class="project-item">
-                <div class="item-header">
-                    <h3>服务器无感的强隔离高弹性一致性分布式存储系统</h3>
-                    <span class="date">2023 年 12 月 - 2026 年 02 月</span>
-                </div>
-                <p class="role">学生小组负责人 - GOODLAB 课题</p>
-                <div class="details">
-                    <p><strong>项目描述:</strong> 国家重点研发计划子课题（GOODLAB
-                        课题），针对服务器无感框架下函数级别计算对分布式数据一致性的差异化需求，以及传统一致性方案在性能与可靠性间的权衡问题，本项目实现了融合因果一致性与强一致性的混合分布式存储系统。</p>
-                    <p><strong>技术实现:</strong>
-                        系统基于 Raft 算法构建一致性层，基于 CRDTs 支持因果一致性，通过 Gossip 协议维护因果关系。核心创新在于利用 LSTM
-                        神经网络分析节点访问模式和网络拓扑变化，预测最优副本同步策略，实现强一致性与因果一致性的自适应切换。
-                    </p>
-                    <p><strong>项目成果:</strong> SCI 一区期刊论文 1 篇，一项发明专利。</p>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="item-header">
-                    <h3>基于 Raft 优化的键值分离分布式存储系统</h3>
-                    <span class="date">2024 年 06 月 - 至今</span>
-                </div>
-                <p class="role">独自实现 - 个人科研课题</p>
-                <div class="details">
-                    <p><strong>项目地址:</strong> <a
-                            href="https://github.com/Dshuishui/Nezha">https://github.com/Dshuishui/Nezha；</a></p>
-                    <p><strong>项目描述:</strong>
-                        个人科研课题。基于 Raft 的分布式键值存储系统在使用 LSM-tree 存储引擎时存在写放大问题：每个数据写操作至少需要三次磁盘写入（Raft 日志持久化、WAL 日志、Memtable
-                        持久化），以及 LSM-tree 后台压缩过程的多层数据合并重写；
-                    </p>
-                    <p><strong>技术实现:</strong>
-                        本项目设计并实现了 Nezha，一种原创分布式键值分离存储系统。在 Raft 日志处理阶段实现 KV 分离以减少写放大。系统核心创新在于设计了自适应垃圾回收（GC）框架，通过多轮 GC
-                        策略动态平衡 KV 分离带来的读性能损耗，同时实现 GC 版本隔离，保证数据处理的正确性。结合优化的 Raft 日志批量同步和多协程并发处理等优化，系统在高并发场景下表现出不错的读写平衡性能；
-                    </p>
-                    <p><strong>项目成果:</strong> 已被 ICDE 2026（CCF A 类会议）录用。</p>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="item-header">
-                    <h3>端云协同驱动的工业产品质量检测系统</h3>
-                    <span class="date">2024 年 05 月 - 2024 年 11 月</span>
-                </div>
-                <p class="role">学生团队负责人 - 权威赛事项目</p>
-                <div class="details">
-                    <p><strong>项目描述:</strong> 权威企业赛事。针对传统工业质检的精度和效率瓶颈，本项目设计并实现了端云算力协同的工业产品智能质量检测方案。</p>
-                    <p><strong>技术实现:</strong>
-                        系统基于 YOLOv8 算法和华为 ModelArts 平台，采用异腾 NPU+GPU
-                        异构训练模型，端侧支持开发板和鸿蒙APP双重部署，实现本地边缘推理与云端协同检测，配合可视化平台构建完整工业检测方案。项目获第十九届"挑战杯"华为云赛道国家级二等奖。
-                    </p>
-                    <p><strong>项目成果:</strong> 获第十九届"挑战杯"华为云赛道国家级二等奖。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 论文发表 -->
-        <section class="section">
-            <h2>论文发表</h2>
-
-            <div class="paper-list">
-                <div class="paper-item">
-                    <h3 class="paper-title">CD-Raft: Reducing the Latency of Distributed Consensus in Cross-Domain Sites
-                    </h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">2026 IEEE INFOCOM</span>
-                        <span class="paper-date">已录用，待发表</span>
-                        <span class="paper-type">Conference paper</span>
-                        <span class="paper-level ccf-a">CCF A 类会议</span>
-                    </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Yangyang Wang(导师); Ziqian Cheng; <strong>Yucong
-                            Dong(学生二作)</strong>; Zichen Xu(导师), et al.</p>
-                </div>
-
-                <div class="paper-item">
-                    <h3 class="paper-title">Nezha: A Key-Value Separated Distributed Store with Optimized Raft Integration</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">ICDE 2026</span>
-                        <span class="paper-date">已录用，待发表</span>
-                        <span class="paper-type">Conference paper</span>
-                        <span class="paper-level ccf-a">CCF A 类会议</span>
-                    </div>
-                    <p class="paper-authors"><strong>Authors:</strong> <strong>Yucong Dong(学生一作)</strong>; Zichen
-                        Xu(导师); Yangyang Wang(导师), et al.</p>
-                </div>
-
-                <div class="paper-item">
-                    <h3 class="paper-title">Dynamic Leader Scheduling with Enhanced QoS for Raft Under Cross-Domain
-                        Scenarios</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">2025 IEEE/ACM 33rd International Symposium on Quality of Service
-                            (IWQoS)</span>
-                        <span class="paper-date">2025-07-02</span>
-                        <span class="paper-type">Conference poster</span>
-                        <span class="paper-level ccf-b">CCF B 类会议 Poster</span>
-                    </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Yangyang Wang(导师); Ziqian Cheng; <strong>Yucong
-                            Dong</strong>; Zichen Xu(导师)</p>
-                    <p class="paper-doi"><strong>DOI:</strong> <a
-                            href="https://doi.org/10.1109/iwqos65803.2025.11143451"
-                            target="_blank">10.1109/iwqos65803.2025.11143451</a></p>
-                </div>
-
-                <div class="paper-item">
-                    <h3 class="paper-title">Fair routing in MoE for distributed spatial data: a combinatorial
-                        multi-armed bandit solution</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">GeoInformatica</span>
-                        <span class="paper-date">2025-03-07</span>
-                        <span class="paper-type">Journal article</span>
-                        <span class="paper-level ccf-b">CCF B 类期刊</span>
-                    </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Yan Fu; Shasha Wang; <strong>Yucong
-                            Dong</strong>; Dan Wu; Juan Wang; Zichen Xu(导师)</p>
-                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10707-025-00541-3"
-                            target="_blank">10.1007/s10707-025-00541-3</a></p>
-                </div>
-
-                <div class="paper-item">
-                    <h3 class="paper-title">SwitchFlow: Optimizing HPC Workflow Performance with Heterogeneous
-                        Serverless Frameworks</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">2024 IEEE 30th International Conference on Parallel and Distributed
-                            Systems (ICPADS)</span>
-                        <span class="paper-date">2024-10-10</span>
-                        <span class="paper-type">Conference paper</span>
-                        <span class="paper-level ccf-c">CCF C 类会议</span>
-                    </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Hao Chen; <strong>Yucong Dong</strong>; Xin Wen;
-                        Zichen Xu(导师)</p>
-                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1109/icpads63350.2024.00045"
-                            target="_blank">10.1109/icpads63350.2024.00045</a></p>
-                </div>
-
-                <div class="paper-item">
-                    <h3 class="paper-title">Edge AI-driven neural network predictions for replica sync optimization</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">Applied Soft Computing</span>
-                        <span class="paper-date">2024-08-08</span>
-                        <span class="paper-type">Journal article</span>
-                        <span class="paper-level sci-top">SCI 一区 TOP</span>
-                    </div>
-                    <p class="paper-authors"><strong>Authors:</strong> Zichen Xu(导师); <strong>Yucong
-                            Dong(学生一作)</strong>;
-                        Junsheng Lou; Yangyang Wang(导师); Yan Fu</p>
-                    <p class="paper-doi"><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.asoc.2024.112083"
-                            target="_blank">10.1016/j.asoc.2024.112083</a></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 发明专利 -->
-        <section class="section">
-            <h2>发明专利</h2>
-
-            <div class="paper-list">
-                <div class="paper-item">
-                    <h3 class="paper-title">基于异构磁盘的分布式存储优化方法、系统、设备及介质</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">发明专利</span>
-                        <span class="paper-date">申请号：202511948464X</span>
-                    </div>
-                    <p class="paper-authors"><strong>发明人：</strong>王洋洋(导师); 苏义栋; <strong>董余聪(学生二作)</strong>; 徐子晨; 马帅</p>
-                </div>
-
-                <div class="paper-item">
-                    <h3 class="paper-title">一种具备动态优化复制策略的混合一致性方法和系统</h3>
-                    <div class="paper-info">
-                        <span class="paper-venue">发明专利</span>
-                        <span class="paper-date">申请号：202410080913.2</span>
-                    </div>
-                    <p class="paper-authors"><strong>发明人：</strong>徐子晨(导师); 娄俊升; <strong>董余聪(学生二作)</strong></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 专业技能 -->
-        <section class="section">
-            <h2>专业技能</h2>
-
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="skill-item">熟悉 Go、C 语言，能读写 Java、Python、Node.js、Vue 前后端开发代码；熟悉 Linux 基础操作指令，有服务器运维经验。
-                    </div>
-                    <div class="skill-item">熟悉分布式共识算法及其潜在优化点（Raft、Paxos 等）；有部署和调试 Tikv 经验。</div>
-                    <div class="skill-item">熟悉 gRPC 框架、GORM、MySQL、Redis、RocksDB 相关知识和基本操作；基本的数据结构与算法、计算机网络、操作系统知识。</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 获奖及其他成果 -->
-        <section class="section">
-            <h2>获奖及其他成果</h2>
-
-            <div class="awards-container">
-                <div class="award-category">
-                    <h3>奖学金</h3>
-                    <div>南昌大学 2024-2025 学年国家奖学金</div>
-                    <div>南昌大学 2023-2024 学年一等学业奖学金</div>
-                    <div>南昌大学 2025-2026 学年江西省政府奖学金</div>
-                    <div>南昌大学 2024-2025 学年特等学业奖学金</div>
-                    <div>南昌大学 2025-2026 学年特等学业奖学金</div>
-                    <div>南昌大学 2024-2025 学年研究生创新奖学金 - 实践之星(全校 6 个名额)</div>
-                </div>
-
-                <div class="award-category">
-                    <h3>国家级竞赛</h3>
-                    <div>
-                        2024 第十九届"挑战杯"全国大学生课外学术科技作品竞赛"揭榜挂帅"专项赛，二等奖(队长)
-                        <div class="award-organizer">主办方：共青团中央、中国科协、中国社会科学院、教育部和全国学联</div>
-                    </div>
-                    <div>
-                        2024 第二十一届中国研究生数学建模竞赛，三等奖
-                        <div class="award-organizer">主办方：中国学位与研究生教育学会、中国科协青少年科技中心</div>
-                    </div>
-                    <div>
-                        2023 第六届上海交大-卫宁健康智慧医疗挑战赛，三等奖
-                        <div class="award-organizer">指导单位：上海市计算机学会<br>承办方：上海交通大学计算机科学与工程系、卫宁健康和上海交大-卫宁健康联合实验室</div>
-                    </div>
-                    <div>
-                        2024 华为开发者大赛中国区学生赛道，三等奖(队长)
-                        <div class="award-organizer">华为ICT领域面向全球的顶级开发者赛事</div>
-                    </div>
-                </div>
-
-                <div class="award-category">
-                    <h3>省级竞赛</h3>
-                    <div>
-                        2024 "数据要素X" 大赛江西分赛，二等奖
-                        <div class="award-organizer">指导单位：国家数据局、江西省人民政府<br>主办方：江西省发展和改革委员会、江西省人民政府办公厅、江西省教育厅等</div>
-                    </div>
-                    <div>
-                        2025 华为软件精英挑战赛-杭厦赛区，三等奖
-                        <div class="award-organizer">华为公司面向全球高校软件精英的顶级赛事</div>
-                    </div>
-                    <div>
-                        2025 中国高校计算机网络技术挑战赛-华中赛区，三等奖(队长)
-                        <div class="award-organizer">主办方：教育部高等学校计算机类专业教学指导委员会、教育部高等学校软件工程专业教学指导委员会、全国高等学校计算机教育研究会</div>
-                    </div>
-                </div>
-
-
-                <div class="award-category">
-                    <h3>其他</h3>
-                    <div>
-                        软件设计师
-                        <div class="award-organizer">全国计算机技术与软件专业技术资格（水平）考试</div>
-                    </div>
-                    <div>英语六级</div>
-                    <div>优秀学生党员</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 社会服务 -->
-        <section class="section">
-            <h2>社会服务</h2>
-
-            <div class="service-container">
-                <div class="service-item">
-                    <div class="item-header">
-                        <h3>2023年中国计算机学会计算机系统大会（CCFSys 2023）</h3>
-                        <span class="date">2023 年</span>
-                    </div>
-                    <p class="role">重要学生组织者 · 核心志愿者</p>
-                    <div class="details">
-                        <p>以导师为会议举办的主要负责人，我作为重要学生组织者兼核心志愿者，负责多个会场的秩序管理，为大会的顺利进行做出了重要贡献。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Dshuishui"
-                        target="_blank">https://github.com/Dshuishui</a></p>
-            </div>
-            <p class="copyright">&copy; 2025 董余聪 All Rights Reserved</p>
         </div>
-    </footer>
+    </aside>
 
-    <script src="js/main.js"></script>
+    <!-- ── Main Content ── -->
+    <main class="main-content">
+
+        <section id="about" class="section fade-in">
+            <h2 class="section-title">关于我</h2>
+            <p>专注于<strong>并行与分布式软件系统</strong>，研究方向涵盖分布式共识算法、键值存储系统性能优化与 Serverless 架构，热衷于系统架构设计与底层性能调优。广泛的知识储备，具备软件开发与性能优化实践经验；坚定的抗压能力，有较高的执行力；扎实的文字功底，曾参与多个国家级、省级项目申报书与结题报告撰写。</p>
+        </section>
+
+        <section id="education" class="section fade-in">
+            <h2 class="section-title">教育经历</h2>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <span class="edu-school">上海交通大学</span>
+                        <span class="edu-degree">计算机科学与技术 · 博士</span>
+                    </div>
+                    <span class="date-tag">2026.09 — 2030.06</span>
+                </div>
+                <p class="edu-meta">导师：王肇国、吴明瑜</p>
+                <p class="edu-note">正在积极学习中</p>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <span class="edu-school">南昌大学</span>
+                        <span class="edu-degree">计算机科学与技术 · 硕士</span>
+                    </div>
+                    <span class="date-tag">2023.09 — 2026.06</span>
+                </div>
+                <p class="edu-meta">导师：徐子晨、王洋洋 · <a href="http://good.ncu.edu.cn" target="_blank">GOODLAB 数据分析与优化实验室</a></p>
+                <ul class="edu-details">
+                    <li>综合排名前 2%，研究方向：并行与分布式软件系统</li>
+                    <li>学术成果：CCF A 类会议 ICDE 2026 录用 1 篇，SCI 一区 TOP 论文 1 篇，发明专利 2 项</li>
+                    <li>外文书籍：《Distributed Data Services: Fundamentals and Practices》，Springer 出版社，承担撰写第 4–8 章节</li>
+                </ul>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <span class="edu-school">南昌大学科学技术学院</span>
+                        <span class="edu-degree">计算机科学与技术 · 本科</span>
+                    </div>
+                    <span class="date-tag">2019.09 — 2023.06</span>
+                </div>
+                <ul class="edu-details">
+                    <li>综合排名 1/288，2023 届优秀毕业生</li>
+                    <li>特等奖学金 3 次，一等奖学金 4 次，英语六级</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications" class="section fade-in">
+            <h2 class="section-title">论文发表</h2>
+            <ol class="pub-list">
+
+                <li class="pub-item">
+                    <div class="pub-title">Nezha: A Key-Value Separated Distributed Store with Optimized Raft Integration</div>
+                    <div class="pub-authors"><strong>Yucong Dong</strong> (学生一作); Zichen Xu; Yangyang Wang et al.</div>
+                    <div class="pub-venue"><em>ICDE 2026</em> &mdash; 已录用，待发表</div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-a">CCF A</span>
+                        <span class="badge badge-first">First Author</span>
+                        <span class="badge badge-status">To appear</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">CD-Raft: Reducing the Latency of Distributed Consensus in Cross-Domain Sites</div>
+                    <div class="pub-authors">Yangyang Wang; Ziqian Cheng; <strong>Yucong Dong</strong> (学生二作); Zichen Xu et al.</div>
+                    <div class="pub-venue"><em>IEEE INFOCOM 2026</em> &mdash; 已录用，待发表</div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-a">CCF A</span>
+                        <span class="badge badge-status">To appear</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Edge AI-driven neural network predictions for replica sync optimization</div>
+                    <div class="pub-authors">Zichen Xu; <strong>Yucong Dong</strong> (学生一作); Junsheng Lou; Yangyang Wang; Yan Fu</div>
+                    <div class="pub-venue"><em>Applied Soft Computing</em>, 2024-08-08 &ensp;<a href="https://doi.org/10.1016/j.asoc.2024.112083" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge sci-top">SCI 一区 TOP</span>
+                        <span class="badge badge-first">First Author</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Dynamic Leader Scheduling with Enhanced QoS for Raft Under Cross-Domain Scenarios</div>
+                    <div class="pub-authors">Yangyang Wang; Ziqian Cheng; <strong>Yucong Dong</strong>; Zichen Xu</div>
+                    <div class="pub-venue"><em>IWQoS 2025</em> (IEEE/ACM 33rd International Symposium on Quality of Service) &ensp;<a href="https://doi.org/10.1109/iwqos65803.2025.11143451" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-b">CCF B</span>
+                        <span class="badge badge-poster">Poster</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Fair routing in MoE for distributed spatial data: a combinatorial multi-armed bandit solution</div>
+                    <div class="pub-authors">Yan Fu; Shasha Wang; <strong>Yucong Dong</strong>; Dan Wu; Juan Wang; Zichen Xu</div>
+                    <div class="pub-venue"><em>GeoInformatica</em>, 2025-03-07 &ensp;<a href="https://doi.org/10.1007/s10707-025-00541-3" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-b">CCF B</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">SwitchFlow: Optimizing HPC Workflow Performance with Heterogeneous Serverless Frameworks</div>
+                    <div class="pub-authors">Hao Chen; <strong>Yucong Dong</strong>; Xin Wen; Zichen Xu</div>
+                    <div class="pub-venue"><em>ICPADS 2024</em> (IEEE 30th International Conference on Parallel and Distributed Systems), 2024-10-10 &ensp;<a href="https://doi.org/10.1109/icpads63350.2024.00045" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-c">CCF C</span>
+                    </div>
+                </li>
+
+            </ol>
+        </section>
+
+        <section id="patents" class="section fade-in">
+            <h2 class="section-title">发明专利</h2>
+            <ol class="pub-list">
+                <li class="pub-item">
+                    <div class="pub-title">基于异构磁盘的分布式存储优化方法、系统、设备及介质</div>
+                    <div class="pub-authors">王洋洋; 苏义栋; <strong>董余聪</strong> (学生二作); 徐子晨; 马帅</div>
+                    <div class="pub-venue">申请号：202511948464X</div>
+                    <div class="pub-badges"><span class="badge badge-status">申请中</span></div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title">一种具备动态优化复制策略的混合一致性方法和系统</div>
+                    <div class="pub-authors">徐子晨; 娄俊升; <strong>董余聪</strong> (学生二作)</div>
+                    <div class="pub-venue">申请号：202410080913.2</div>
+                    <div class="pub-badges"><span class="badge badge-status">申请中</span></div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="experience" class="section fade-in">
+            <h2 class="section-title">实习经历</h2>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <span class="exp-company">上海七牛信息技术有限公司</span>
+                        <span class="exp-role">基础架构部门 · 后端开发工程师</span>
+                    </div>
+                    <span class="date-tag">2025.07 — 2025.10</span>
+                </div>
+                <div class="exp-details">
+                    <p><strong>应用技术：</strong>Vue.js 3、TypeScript、Go、YAP（<a href="https://github.com/goplus/xgo" target="_blank">XGO</a> 生态 DSL 框架）、GORM、MySQL、Redis、Kodo 对象存储</p>
+                    <p><strong>工作职责：</strong>七牛 1024 训练营 XLink 小组组长，主导设计并实现 XBuilder 平台完整分享功能模块，支持 QQ、微信、抖音、小红书、B 站等 5 个平台一键分享图片和视频。</p>
+                    <p><strong>核心贡献：</strong>统筹前后端开发，设计涵盖核心功能模块层、UI 分享弹窗层、平台集成层和 API 服务层的完整架构。前端基于 Vue 3 + TypeScript 实现三种分享方式交互流程，通过策略模式适配 5 个平台；后端使用 GORM 设计录屏记录数据模型，实现 RESTful API 并集成 Kodo 对象存储，通过统一 PlatformConfig 接口实现解耦设计。</p>
+                    <p>
+                        <a href="https://github.com/goplus/builder/tree/trailhead_sharing" target="_blank">开源代码</a> ·
+                        <a href="https://github.com/goplus/builder/blob/trailhead_sharing/docs/develop/share/index.md" target="_blank">架构设计文档</a> ·
+                        <a href="https://github.com/goplus/builder/pulls?q=is%3Apr+author%3ADshuishui+is%3Aclosed" target="_blank">个人 PR 记录</a> ·
+                        <a href="https://mp.weixin.qq.com/s/Uo5mSNofM2j1XXK3uevJwA" target="_blank">实习心得</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section fade-in">
+            <h2 class="section-title">项目经历</h2>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">服务器无感的强隔离高弹性一致性分布式存储系统</span>
+                    <span class="date-tag">2023.12 — 2026.02</span>
+                </div>
+                <p class="proj-role">学生小组负责人 · 国家重点研发计划子课题（GOODLAB 课题）</p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>针对服务器无感框架下函数级别计算对分布式数据一致性的差异化需求，以及传统一致性方案在性能与可靠性间的权衡问题，实现了融合因果一致性与强一致性的混合分布式存储系统。</p>
+                    <p><strong>技术实现：</strong>基于 Raft 算法构建一致性层，基于 CRDTs 支持因果一致性，通过 Gossip 协议维护因果关系；利用 LSTM 神经网络分析节点访问模式，预测最优副本同步策略，实现强一致性与因果一致性的自适应切换。</p>
+                    <p><strong>项目成果：</strong>SCI 一区期刊论文 1 篇，发明专利 1 项。</p>
+                </div>
+            </div>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">基于 Raft 优化的键值分离分布式存储系统（Nezha）</span>
+                    <span class="date-tag">2024.06 — 至今</span>
+                </div>
+                <p class="proj-role">独立实现 · 个人科研课题 &ensp;<a href="https://github.com/Dshuishui/Nezha" target="_blank">GitHub</a></p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>针对基于 Raft 的分布式 KV 存储在 LSM-tree 引擎下的写放大问题（每次写操作至少三次磁盘写入），设计并实现原创分布式键值分离存储系统 Nezha。</p>
+                    <p><strong>技术实现：</strong>在 Raft 日志处理阶段实现 KV 分离以减少写放大；设计自适应垃圾回收（GC）框架，通过多轮 GC 策略动态平衡读性能损耗，同时实现 GC 版本隔离保证正确性；结合 Raft 日志批量同步和多协程并发处理。</p>
+                    <p><strong>项目成果：</strong>已被 ICDE 2026（CCF A 类会议）录用。</p>
+                </div>
+            </div>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">端云协同驱动的工业产品质量检测系统</span>
+                    <span class="date-tag">2024.05 — 2024.11</span>
+                </div>
+                <p class="proj-role">学生团队负责人 · 权威企业赛事</p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>针对传统工业质检的精度和效率瓶颈，设计并实现端云算力协同的工业产品智能质量检测方案。</p>
+                    <p><strong>技术实现：</strong>基于 YOLOv8 与华为 ModelArts 平台，采用昇腾 NPU + GPU 异构训练，端侧支持开发板和鸿蒙 APP 双重部署，实现本地边缘推理与云端协同检测。</p>
+                    <p><strong>项目成果：</strong>第十九届"挑战杯"华为云赛道国家级二等奖（队长）。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section fade-in">
+            <h2 class="section-title">获奖及其他成果</h2>
+            <div class="awards-grid">
+
+                <div class="award-group">
+                    <h3>奖学金</h3>
+                    <div class="award-item">南昌大学 2024–2025 学年 国家奖学金</div>
+                    <div class="award-item">南昌大学 2025–2026 学年 江西省政府奖学金</div>
+                    <div class="award-item">南昌大学 2024–2025 学年 特等学业奖学金</div>
+                    <div class="award-item">南昌大学 2025–2026 学年 特等学业奖学金</div>
+                    <div class="award-item">南昌大学 2023–2024 学年 一等学业奖学金</div>
+                    <div class="award-item">南昌大学 2024–2025 学年 研究生创新奖学金 · 实践之星（全校 6 名额）</div>
+                </div>
+
+                <div class="award-group">
+                    <h3>国家级竞赛</h3>
+                    <div class="award-item">
+                        第十九届"挑战杯"全国大学生课外学术科技作品竞赛"揭榜挂帅"专项赛，<strong>二等奖</strong>（队长）
+                        <div class="award-org">主办：共青团中央、中国科协、教育部、全国学联 · 2024</div>
+                    </div>
+                    <div class="award-item">
+                        第二十一届中国研究生数学建模竞赛，<strong>三等奖</strong>
+                        <div class="award-org">主办：中国学位与研究生教育学会 · 2024</div>
+                    </div>
+                    <div class="award-item">
+                        第六届上海交大-卫宁健康智慧医疗挑战赛，<strong>三等奖</strong>
+                        <div class="award-org">指导：上海市计算机学会 · 2023</div>
+                    </div>
+                    <div class="award-item">
+                        华为开发者大赛中国区学生赛道，<strong>三等奖</strong>（队长）
+                        <div class="award-org">华为 ICT 领域全球开发者赛事 · 2024</div>
+                    </div>
+                </div>
+
+                <div class="award-group">
+                    <h3>省级竞赛</h3>
+                    <div class="award-item">
+                        "数据要素X"大赛江西分赛，<strong>二等奖</strong>
+                        <div class="award-org">指导：国家数据局、江西省人民政府 · 2024</div>
+                    </div>
+                    <div class="award-item">
+                        华为软件精英挑战赛·杭厦赛区，<strong>三等奖</strong>
+                        <div class="award-org">华为公司面向全球高校软件精英赛事 · 2025</div>
+                    </div>
+                    <div class="award-item">
+                        中国高校计算机网络技术挑战赛·华中赛区，<strong>三等奖</strong>（队长）
+                        <div class="award-org">主办：教育部高等学校计算机类专业教学指导委员会 · 2025</div>
+                    </div>
+                </div>
+
+                <div class="award-group">
+                    <h3>其他</h3>
+                    <div class="award-item">
+                        软件设计师（中级）
+                        <div class="award-org">全国计算机技术与软件专业技术资格（水平）考试</div>
+                    </div>
+                    <div class="award-item">英语六级（CET-6）</div>
+                    <div class="award-item">优秀学生党员</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section fade-in">
+            <h2 class="section-title">专业技能</h2>
+            <ul class="skills-list">
+                <li>熟悉 Go、C 语言，能读写 Java、Python、Node.js 及 Vue 前后端开发代码；熟悉 Linux 基础操作，有服务器运维经验。</li>
+                <li>熟悉分布式共识算法及其潜在优化点（Raft、Paxos 等）；有部署和调试 TiKV 的实践经验。</li>
+                <li>熟悉 gRPC 框架、GORM、MySQL、Redis、RocksDB 相关知识和基本操作；具备扎实的数据结构与算法、计算机网络、操作系统基础。</li>
+            </ul>
+        </section>
+
+        <section id="service" class="section fade-in">
+            <h2 class="section-title">社会服务</h2>
+            <div class="service-item">
+                <div class="service-header">
+                    <span class="service-name">2023 年中国计算机学会计算机系统大会（CCFSys 2023）</span>
+                    <span class="date-tag">2023</span>
+                </div>
+                <p class="service-role">重要学生组织者 · 核心志愿者</p>
+                <p class="service-desc">以导师为会议举办的主要负责人，我作为重要学生组织者兼核心志愿者，负责多个会场的秩序管理，为大会的顺利进行做出了重要贡献。</p>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2025 董余聪 (Yucong Dong) &ensp;·&ensp; <a href="mailto:dyucong@email.ncu.edu.cn">dyucong@email.ncu.edu.cn</a></p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>
