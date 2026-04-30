@@ -315,6 +315,37 @@ a:hover {
 }
 
 /* ── Publications ── */
+
+/* Venue summary chips above the list */
+.venue-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1.1rem;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #f3f4f6;
+}
+
+.vs-label {
+  font-size: 0.68rem;
+  color: #9ca3af;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  margin-right: 2px;
+}
+
+.vs-chip {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
 .pub-list {
   list-style: none;
   counter-reset: pub;
@@ -368,13 +399,15 @@ a:hover {
 .pub-venue {
   font-size: 0.82rem;
   color: #6b7280;
-  margin-bottom: 7px;
+  display: inline;
 }
 
 .pub-badges {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 /* ── Badges ── */
