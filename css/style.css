@@ -597,6 +597,17 @@ footer a:hover {
   color: #2563eb;
 }
 
+.busuanzi-count {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: #d1d5db;
+}
+
+.busuanzi-count span {
+  font-weight: 600;
+  color: #9ca3af;
+}
+
 /* ── Scroll fade-in ── */
 .fade-in {
   opacity: 0;
