@@ -115,11 +115,12 @@ a:hover {
 }
 
 .sidebar-role {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: #374151;
   text-align: center;
   font-weight: 500;
   margin-bottom: 2px;
+  white-space: nowrap;
 }
 
 .sidebar-affil {
