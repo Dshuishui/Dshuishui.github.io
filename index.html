@@ -359,6 +359,19 @@
                     <p><strong>项目成果：</strong>第十九届"挑战杯"华为云赛道国家级二等奖（队长）。</p>
                 </div>
             </div>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">ScholarScout — AI 驱动的自然语言学术论文搜索工具</span>
+                    <span class="date-tag">2025.12 — 至今</span>
+                </div>
+                <p class="proj-role">独立开发 · 个人项目 &ensp;<a href="https://github.com/Dshuishui/ScholarScout" target="_blank">GitHub</a> · <a href="http://118.25.192.117" target="_blank">Demo</a></p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>面向非 CS 背景科研人员的学术论文检索工具，用户以中文自然语言描述需求（如"找 2023 年以后关于大模型幻觉的论文"），系统自动提取关键词并并发检索 10 个学术数据库（arXiv、Semantic Scholar、PubMed 等），AI 二次过滤相关性，支持一键 PDF 预览与批量下载。</p>
+                    <p><strong>技术实现：</strong>前端基于 React 18 + TypeScript + Vite，后端使用 FastAPI + SQLAlchemy，通过 Server-Sent Events（SSE）实现实时进度流式推送；集成 DeepSeek API 进行意图解析与相关性验证；实现多源去重（DOI 匹配 + 标题归一化）、用户注册/收藏/阅读历史等功能；部署于个人云服务器，使用 Nginx + systemd + Umami 统计。</p>
+                    <p><strong>项目成果：</strong>开源（MIT 协议），提供在线 Demo，支持 10 个主流学术数据源并发检索。</p>
+                </div>
+            </div>
         </section>
 
         <section id="awards" class="section fade-in">
