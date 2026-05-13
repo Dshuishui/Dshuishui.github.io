@@ -339,7 +339,7 @@
                 <div class="proj-details">
                     <p><strong>Overview:</strong> Raft-based distributed KV stores suffer from write amplification under LSM-tree engines (at least 3 disk writes per operation). Nezha addresses this by separating keys and values at the Raft log processing stage.</p>
                     <p><strong>Implementation:</strong> Designed an adaptive GC framework with multi-round GC policies to dynamically balance the read-performance overhead introduced by KV separation; implemented GC version isolation to ensure correctness; combined with batched Raft log synchronization and concurrent goroutine processing.</p>
-                    <p><strong>Outcome:</strong> Accepted at ICDE 2026 (CCF-A).</p>
+                    <p><strong>Outcome:</strong> Accepted at ICDE 2026 (CCF-A); also accepted at the <a href="https://chinasys-2026spring.nwu.edu.cn/" target="_blank">30th ACM SIGOPS China Workshop on Computer Systems (ChinaSys'26 Spring)</a> as an Oral presentation.</p>
                 </div>
             </div>
 
