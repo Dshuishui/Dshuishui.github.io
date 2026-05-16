@@ -659,6 +659,15 @@ footer a:hover {
   display: none;
 }
 
+.mobile-topbar-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
 .mobile-topbar-name {
   font-size: 0.95rem;
   font-weight: 700;
