@@ -663,7 +663,11 @@ footer a:hover {
   .sidebar {
     width: 100%;
     height: auto;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
     border-right: none;
     border-bottom: 1px solid #e5e7eb;
   }
@@ -737,6 +741,61 @@ footer a:hover {
 
 /* ── Responsive: Mobile ── */
 @media (max-width: 520px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .sidebar-inner {
+    padding: 0.5rem 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0 0.8rem;
+  }
+
+  /* Compact: hide heavy elements on phone */
+  .avatar,
+  .sidebar-name-en,
+  .sidebar-role,
+  .sidebar-affil,
+  .sidebar-dept,
+  .contact-links,
+  .sidebar-hobbies {
+    display: none;
+  }
+
+  .lang-switch {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .sidebar-name {
+    font-size: 0.9rem;
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  .side-nav {
+    flex: 1;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .side-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .side-nav a {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
   .main-content {
     padding: 1rem;
   }
