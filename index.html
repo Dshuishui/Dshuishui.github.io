@@ -80,6 +80,42 @@
 </head>
 <body>
 
+<!-- SVG icon sprite -->
+<svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ico-news" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+    </symbol>
+    <symbol id="ico-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+    </symbol>
+    <symbol id="ico-edu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+    </symbol>
+    <symbol id="ico-pub" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </symbol>
+    <symbol id="ico-patent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+    </symbol>
+    <symbol id="ico-work" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+    </symbol>
+    <symbol id="ico-proj" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+    </symbol>
+    <symbol id="ico-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </symbol>
+    <symbol id="ico-skill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+    </symbol>
+    <symbol id="ico-service" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+  </defs>
+</svg>
+
 <!-- Mobile top bar (only shown on phones ≤520px) -->
 <div class="mobile-topbar" id="mobileTopbar">
     <img src="images/me.jpg" alt="头像" class="mobile-topbar-avatar">
@@ -103,7 +139,9 @@
                 <span class="lang-sep">·</span>
                 <a href="en/" class="lang-btn">EN</a>
             </div>
-            <img src="images/me.jpg" alt="董余聪" class="avatar">
+            <div class="avatar-ring">
+                <img src="images/me.jpg" alt="董余聪" class="avatar">
+            </div>
             <h1 class="sidebar-name">董余聪</h1>
             <div class="sidebar-name-en">Yucong Dong</div>
             <div class="sidebar-role">博士研究生 · 南昌大学优秀学生党员</div>
@@ -132,6 +170,7 @@
             <nav class="side-nav">
                 <div class="side-nav-label">导航</div>
                 <a href="#about">关于我</a>
+                <a href="#news">最新动态</a>
                 <a href="#education">教育经历</a>
                 <a href="#publications">论文发表</a>
                 <a href="#patents">发明专利</a>
@@ -153,12 +192,65 @@
     <main class="main-content">
 
         <section id="about" class="section fade-in">
-            <h2 class="section-title">关于我</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-user"/></svg>关于我</h2>
             <p>专注于 <strong>AI4Science</strong>（生物与化学）与<strong>并行与分布式软件系统</strong>，热衷于系统架构设计与底层性能调优。</p>
+            <div class="research-tags">
+                <div class="research-tag">
+                    <svg class="rt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                    <div>
+                        <div class="rt-label">AI4Science</div>
+                        <div class="rt-desc">面向生物与化学的 AI 应用</div>
+                    </div>
+                </div>
+                <div class="research-tag">
+                    <svg class="rt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+                    <div>
+                        <div class="rt-label">分布式系统</div>
+                        <div class="rt-desc">Raft 共识、一致性协议</div>
+                    </div>
+                </div>
+                <div class="research-tag">
+                    <svg class="rt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    <div>
+                        <div class="rt-label">键值存储</div>
+                        <div class="rt-desc">LSM-tree、写放大优化</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-news"/></svg>最新动态</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">2026.05</span>
+                    <span class="news-content">论文 <em>Semantic Raft</em> 被 <strong>IWQoS 2026</strong> 录用 <span class="news-badge ccf-b">CCF B</span></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.04</span>
+                    <span class="news-content">Nezha 受邀在第 30 届 <strong>ACM SIGOPS ChinaSys'26 Spring</strong> 以 Oral 形式汇报</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.03</span>
+                    <span class="news-content">论文 <em>CD-Raft</em> 被 <strong>INFOCOM 2026</strong> 录用 <span class="news-badge ccf-a">CCF A</span></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.01</span>
+                    <span class="news-content">论文 <em>Nezha</em> 被 <strong>ICDE 2026</strong> 录用 <span class="news-badge ccf-a">CCF A</span></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025.07</span>
+                    <span class="news-content">加入<strong>七牛云</strong>基础架构部门，担任后端开发工程师实习生</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025.03</span>
+                    <span class="news-content">论文发表于 <strong>GeoInformatica</strong> <span class="news-badge ccf-b">CCF B</span></span>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="section fade-in">
-            <h2 class="section-title">教育经历</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-edu"/></svg>教育经历</h2>
 
             <div class="edu-item">
                 <div class="edu-header">
@@ -204,7 +296,7 @@
         </section>
 
         <section id="publications" class="section fade-in">
-            <h2 class="section-title">论文发表</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-pub"/></svg>论文发表</h2>
             <div class="venue-summary">
                 <span class="vs-label">发表于</span>
                 <span class="vs-chip ccf-a">ICDE 2026</span>
@@ -217,7 +309,8 @@
             </div>
             <ol class="pub-list">
 
-                <li class="pub-item">
+                <li class="pub-item pub-featured">
+                    <div class="pub-featured-label">Featured</div>
                     <div class="pub-title">Nezha: A Key-Value Separated Distributed Store with Optimized Raft Integration</div>
                     <div class="pub-authors"><strong>Yucong Dong</strong> (学生一作); Zichen Xu; Yangyang Wang et al.</div>
                     <div class="pub-venue"><em>ICDE 2026</em> &mdash; 已录用，待发表 &ensp;<a href="https://github.com/Dshuishui/Nezha" target="_blank">[Code]</a></div>
@@ -290,7 +383,7 @@
         </section>
 
         <section id="patents" class="section fade-in">
-            <h2 class="section-title">发明专利</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-patent"/></svg>发明专利</h2>
             <ol class="pub-list">
                 <li class="pub-item">
                     <div class="pub-title">基于异构磁盘的分布式存储优化方法、系统、设备及介质</div>
@@ -308,7 +401,7 @@
         </section>
 
         <section id="experience" class="section fade-in">
-            <h2 class="section-title">实习经历</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-work"/></svg>实习经历</h2>
             <div class="exp-item">
                 <div class="exp-header">
                     <div>
@@ -332,7 +425,7 @@
         </section>
 
         <section id="projects" class="section fade-in">
-            <h2 class="section-title">项目经历</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-proj"/></svg>项目经历</h2>
 
             <div class="proj-item">
                 <div class="proj-header">
@@ -388,7 +481,7 @@
         </section>
 
         <section id="awards" class="section fade-in">
-            <h2 class="section-title">获奖及其他成果</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-award"/></svg>获奖及其他成果</h2>
             <div class="awards-grid">
 
                 <div class="award-group">
@@ -451,7 +544,7 @@
         </section>
 
         <section id="skills" class="section fade-in">
-            <h2 class="section-title">专业技能</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-skill"/></svg>专业技能</h2>
             <ul class="skills-list">
                 <li>熟悉 Go、C 语言，能读写 Java、Python、Node.js 及 Vue 前后端开发代码；熟悉 Linux 基础操作，有服务器运维经验。</li>
                 <li>熟悉分布式共识算法及其潜在优化点（Raft、Paxos 等）；有部署和调试 TiKV 的实践经验。</li>
@@ -460,7 +553,7 @@
         </section>
 
         <section id="service" class="section fade-in">
-            <h2 class="section-title">社会服务</h2>
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-service"/></svg>社会服务</h2>
             <div class="service-item">
                 <div class="service-header">
                     <span class="service-name">2023 年中国计算机学会计算机系统大会（CCFSys 2023）</span>
@@ -482,6 +575,11 @@
         访问量 <span id="busuanzi_value_site_pv"></span> 次
     </p>
 </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<div class="toast" id="toast"></div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="js/main.js"></script>
