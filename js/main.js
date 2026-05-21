@@ -104,6 +104,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // GitHub followers (live)
+    fetch('https://api.github.com/users/Dshuishui')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+            document.querySelectorAll('.github-followers').forEach(function (el) {
+                if (data.followers !== undefined) el.textContent = data.followers + ' followers';
+            });
+        })
+        .catch(function () {});
+
     // Avatar fallback
     const avatar = document.querySelector('.avatar');
     if (avatar) {
