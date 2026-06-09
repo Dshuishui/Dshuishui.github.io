@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yucong Dong (董余聪) · Distributed Systems Researcher</title>
+    <meta name="description" content="董余聪（Yucong Dong）的个人学术主页。上海交通大学计算机科学博士生，研究方向：AI4Science、并行与分布式软件系统、Raft 共识算法、键值存储系统优化。发表 CCF A 类会议论文 2 篇（ICDE 2026、INFOCOM 2026），CCF B 类会议论文 3 篇，SCI 一区 TOP 期刊论文 1 篇。">
+    <meta name="keywords" content="董余聪, Yucong Dong, AI4Science, 分布式系统, Raft, 键值存储, ICDE 2026, INFOCOM 2026, 上海交通大学, 南昌大学, distributed systems, consensus algorithm, key-value storage, Nezha">
+    <meta name="author" content="Yucong Dong">
+    <link rel="canonical" href="https://dshuishui.github.io/zh/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Yucong Dong (董余聪) · Personal Homepage">
+    <meta property="og:description" content="Ph.D. Student at Shanghai Jiao Tong University. Research: distributed systems, Raft consensus, key-value storage. CCF-A papers at ICDE 2026 & INFOCOM 2026.">
+    <meta property="og:url" content="https://dshuishui.github.io/zh/">
+    <meta property="og:image" content="https://dshuishui.github.io/images/me.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="profile:first_name" content="Yucong">
+    <meta property="profile:last_name" content="Dong">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Yucong Dong (董余聪)">
+    <meta name="twitter:description" content="Ph.D. Student at SJTU. Distributed systems, Raft, key-value storage. CCF-A: ICDE 2026 & INFOCOM 2026.">
+    <meta name="twitter:image" content="https://dshuishui.github.io/images/me.jpg">
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yucong Dong",
+      "alternateName": "董余聪",
+      "jobTitle": "Ph.D. Student",
+      "description": "Researcher in parallel and distributed software systems, specializing in Raft consensus algorithms and key-value storage optimization.",
+      "url": "https://dshuishui.github.io/",
+      "email": "dongyucong@sjtu.edu.cn",
+      "image": "https://dshuishui.github.io/images/me.jpg",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Shanghai Jiao Tong University",
+        "alternateName": "上海交通大学"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Nanchang University",
+        "alternateName": "南昌大学"
+      },
+      "sameAs": [
+        "https://github.com/Dshuishui",
+        "https://orcid.org/0009-0002-6078-0590"
+      ],
+      "knowsAbout": [
+        "Distributed Systems",
+        "Raft Consensus Algorithm",
+        "Key-Value Storage",
+        "Serverless Computing",
+        "Parallel Computing",
+        "LSM-tree",
+        "CRDTs"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Baidu Statistics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?96c2ceb18f7312081f373902d8ffb419";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ico-news" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+    </symbol>
+    <symbol id="ico-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+    </symbol>
+    <symbol id="ico-edu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+    </symbol>
+    <symbol id="ico-pub" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </symbol>
+    <symbol id="ico-patent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+    </symbol>
+    <symbol id="ico-work" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+    </symbol>
+    <symbol id="ico-proj" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+    </symbol>
+    <symbol id="ico-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </symbol>
+    <symbol id="ico-skill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+    </symbol>
+    <symbol id="ico-service" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Mobile top bar (only shown on phones ≤520px) -->
+<div class="mobile-topbar" id="mobileTopbar">
+    <img src="../images/me.jpg" alt="头像" class="mobile-topbar-avatar">
+    <span class="mobile-topbar-name">董余聪</span>
+    <span class="mobile-section-indicator" id="mobileSectionLabel">关于我</span>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="打开导航" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+</div>
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+
+<div class="layout">
+
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <div class="lang-switch">
+                <span class="lang-btn lang-active">中文</span>
+                <span class="lang-sep">·</span>
+                <a href="../" class="lang-btn">EN</a>
+            </div>
+            <div class="avatar-ring">
+                <img src="../images/me.jpg" alt="董余聪" class="avatar">
+            </div>
+            <h1 class="sidebar-name">董余聪</h1>
+            <div class="sidebar-name-en">Yucong Dong</div>
+            <div class="sidebar-role">博士研究生 · 南昌大学优秀学生党员</div>
+            <div class="sidebar-affil">上海交通大学</div>
+            <div class="sidebar-dept">计算机科学与技术</div>
+
+            <div class="contact-links">
+                <a href="mailto:dongyucong@sjtu.edu.cn" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email
+                </a>
+                <a href="https://github.com/Dshuishui" target="_blank" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                    <span class="chip-stat github-followers"></span>
+                </a>
+                <a href="https://orcid.org/0009-0002-6078-0590" target="_blank" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    ORCID
+                </a>
+                <a href="https://blog.csdn.net/qq_45913026?type=blog" target="_blank" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    CSDN Blog
+                    <span class="chip-stat">2.8万阅读</span>
+                </a>
+            </div>
+
+            <nav class="side-nav">
+                <div class="side-nav-label">导航</div>
+                <a href="#about">关于我</a>
+                <a href="#news">最新动态</a>
+                <a href="#education">教育经历</a>
+                <a href="#publications">论文发表</a>
+                <a href="#patents">发明专利</a>
+                <a href="#experience">实习经历</a>
+                <a href="#projects">项目经历</a>
+                <a href="#awards">获奖情况</a>
+                <a href="#skills">专业技能</a>
+                <a href="#service">社会服务</a>
+            </nav>
+
+            <div class="sidebar-hobbies">
+                <div class="hobbies-label">兴趣爱好</div>
+                <div class="hobbies-content">健身（握推 85KG）· 桌球 · 羽毛球 · 乒乓球 · 游泳</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ── Main Content ── -->
+    <main class="main-content">
+
+        <section id="about" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-user"/></svg>关于我</h2>
+            <p>专注于 <strong>AI4Science</strong>（生物与化学）与<strong>并行与分布式软件系统</strong>，热衷于系统架构设计与底层性能调优。</p>
+            <div class="research-tags">
+                <div class="research-tag">
+                    <svg class="rt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                    <div>
+                        <div class="rt-label">AI4Science</div>
+                        <div class="rt-desc">面向生物与化学的 AI 应用</div>
+                    </div>
+                </div>
+                <div class="research-tag">
+                    <svg class="rt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+                    <div>
+                        <div class="rt-label">分布式系统</div>
+                        <div class="rt-desc">Raft 共识、一致性协议</div>
+                    </div>
+                </div>
+                <div class="research-tag">
+                    <svg class="rt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    <div>
+                        <div class="rt-label">键值存储</div>
+                        <div class="rt-desc">LSM-tree、写放大优化</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-news"/></svg>最新动态</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">2026.06</span>
+                    <span class="news-content">获评<strong>南昌大学 2026 届优秀毕业研究生</strong>及<strong>优秀学位论文</strong></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.05</span>
+                    <span class="news-content">Nezha 被第 30 届 <strong>ACM SIGOPS ChinaSys'26 Spring</strong> 录用，以 Oral 形式汇报</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.04</span>
+                    <span class="news-content">论文 <em>Semantic Raft</em> 被 <strong>IWQoS 2026</strong> 录用 <span class="news-badge ccf-b">CCF B</span></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.03</span>
+                    <span class="news-content">论文 <em>Nezha</em> 被 <strong>ICDE 2026</strong> 录用 <span class="news-badge ccf-a">CCF A</span></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025.12</span>
+                    <span class="news-content">论文 <em>CD-Raft</em> 被 <strong>INFOCOM 2026</strong> 录用 <span class="news-badge ccf-a">CCF A</span></span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025.07</span>
+                    <span class="news-content">加入<strong>七牛云</strong>基础架构部门，担任后端开发工程师实习生</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025.03</span>
+                    <span class="news-content">论文发表于 <strong>GeoInformatica</strong> <span class="news-badge ccf-b">CCF B</span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-edu"/></svg>教育经历</h2>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <span class="edu-school">上海交通大学</span>
+                        <span class="edu-degree">计算机科学与技术 · 博士</span>
+                    </div>
+                    <span class="date-tag">2026.09 — 2030.06</span>
+                </div>
+                <p class="edu-meta">导师：王肇国、吴明瑜</p>
+                <p class="edu-note">正在积极学习中</p>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <span class="edu-school">南昌大学</span>
+                        <span class="edu-degree">计算机科学与技术 · 硕士</span>
+                    </div>
+                    <span class="date-tag">2023.09 — 2026.06</span>
+                </div>
+                <p class="edu-meta">导师：徐子晨、王洋洋 · <a href="http://good.ncu.edu.cn" target="_blank">GOODLAB 数据分析与优化实验室</a></p>
+                <ul class="edu-details">
+                    <li>综合排名前 2%，研究方向：并行与分布式软件系统</li>
+                    <li>学术成果：CCF A 类会议 ICDE 2026 录用 1 篇，SCI 一区 TOP 论文 1 篇，发明专利 2 项</li>
+                    <li>外文书籍：《Distributed Data Services: Fundamentals and Practices》，Springer 出版社，承担撰写第 4–8 章节</li>
+                </ul>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>
+                        <span class="edu-school">南昌大学科学技术学院</span>
+                        <span class="edu-degree">计算机科学与技术 · 本科</span>
+                    </div>
+                    <span class="date-tag">2019.09 — 2023.06</span>
+                </div>
+                <ul class="edu-details">
+                    <li>综合排名 1/288，2023 届优秀毕业生</li>
+                    <li>特等奖学金 3 次，一等奖学金 4 次，英语六级</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-pub"/></svg>论文发表</h2>
+            <div class="venue-summary">
+                <span class="vs-label">发表于</span>
+                <span class="vs-chip ccf-a">ICDE 2026</span>
+                <span class="vs-chip ccf-a">INFOCOM 2026</span>
+                <span class="vs-chip sci-top">Applied Soft Computing 2024</span>
+                <span class="vs-chip ccf-b">IWQoS 2026</span>
+                <span class="vs-chip ccf-b">IWQoS 2025</span>
+                <span class="vs-chip ccf-b">GeoInformatica 2025</span>
+                <span class="vs-chip ccf-c">ICPADS 2024</span>
+            </div>
+            <ol class="pub-list">
+
+                <li class="pub-item">
+                    <div class="pub-title">Nezha: A Key-Value Separated Distributed Store with Optimized Raft Integration</div>
+                    <div class="pub-authors"><strong>Yucong Dong</strong> (学生一作); Zichen Xu; Yangyang Wang et al.</div>
+                    <div class="pub-venue"><em>ICDE 2026</em> &mdash; 已录用，待发表 &ensp;<a href="https://github.com/Dshuishui/Nezha" target="_blank">[Code]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-a">CCF A</span>
+                        <span class="badge badge-first">First Author</span>
+                        <span class="badge badge-status">To appear</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">CD-Raft: Reducing the Latency of Distributed Consensus in Cross-Domain Sites</div>
+                    <div class="pub-authors">Yangyang Wang; Ziqian Cheng; <strong>Yucong Dong</strong> (学生二作); Zichen Xu et al.</div>
+                    <div class="pub-venue"><em>IEEE INFOCOM 2026</em> &mdash; 已录用，待发表</div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-a">CCF A</span>
+                        <span class="badge badge-status">To appear</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Semantic Raft: A Fault-Tolerant Multi-Agent Inference Framework for Reliable LLM Services</div>
+                    <div class="pub-authors">Yidong Su (学生一作); Yangyang Wang (导师); <strong>Yucong Dong</strong> (学生二作); Zichen Xu (导师)</div>
+                    <div class="pub-venue"><em>IWQoS 2026</em> &mdash; 已录用，待发表</div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-b">CCF B</span>
+                        <span class="badge badge-status">To appear</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Edge AI-driven neural network predictions for replica sync optimization</div>
+                    <div class="pub-authors">Zichen Xu; <strong>Yucong Dong</strong> (学生一作); Junsheng Lou; Yangyang Wang; Yan Fu</div>
+                    <div class="pub-venue"><em>Applied Soft Computing</em>, 2024-08-08 &ensp;<a href="https://doi.org/10.1016/j.asoc.2024.112083" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge sci-top">SCI 一区 TOP</span>
+                        <span class="badge badge-first">First Author</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Dynamic Leader Scheduling with Enhanced QoS for Raft Under Cross-Domain Scenarios</div>
+                    <div class="pub-authors">Yangyang Wang; Ziqian Cheng; <strong>Yucong Dong</strong>; Zichen Xu</div>
+                    <div class="pub-venue"><em>IWQoS 2025</em> (IEEE/ACM 33rd International Symposium on Quality of Service) &ensp;<a href="https://doi.org/10.1109/iwqos65803.2025.11143451" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-b">CCF B</span>
+                        <span class="badge badge-poster">Poster</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">Fair routing in MoE for distributed spatial data: a combinatorial multi-armed bandit solution</div>
+                    <div class="pub-authors">Yan Fu; Shasha Wang; <strong>Yucong Dong</strong>; Dan Wu; Juan Wang; Zichen Xu</div>
+                    <div class="pub-venue"><em>GeoInformatica</em>, 2025-03-07 &ensp;<a href="https://doi.org/10.1007/s10707-025-00541-3" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-b">CCF B</span>
+                    </div>
+                </li>
+
+                <li class="pub-item">
+                    <div class="pub-title">SwitchFlow: Optimizing HPC Workflow Performance with Heterogeneous Serverless Frameworks</div>
+                    <div class="pub-authors">Hao Chen; <strong>Yucong Dong</strong>; Xin Wen; Zichen Xu</div>
+                    <div class="pub-venue"><em>ICPADS 2024</em> (IEEE 30th International Conference on Parallel and Distributed Systems), 2024-10-10 &ensp;<a href="https://doi.org/10.1109/icpads63350.2024.00045" target="_blank">[DOI]</a></div>
+                    <div class="pub-badges">
+                        <span class="badge ccf-c">CCF C</span>
+                    </div>
+                </li>
+
+            </ol>
+        </section>
+
+        <section id="patents" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-patent"/></svg>发明专利</h2>
+            <ol class="pub-list">
+                <li class="pub-item">
+                    <div class="pub-title">基于异构磁盘的分布式存储优化方法、系统、设备及介质</div>
+                    <div class="pub-authors">王洋洋; 苏义栋; <strong>董余聪</strong> (主要发明人); 徐子晨; 马帅</div>
+                    <div class="pub-venue">授权公告号：CN 121387202 B</div>
+                    <div class="pub-badges"><span class="badge badge-granted">已授权</span></div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title">一种具备动态优化复制策略的混合一致性方法和系统</div>
+                    <div class="pub-authors">徐子晨; 娄俊升; <strong>董余聪</strong> (主要发明人)</div>
+                    <div class="pub-venue">申请号：202410080913.2</div>
+                    <div class="pub-badges"><span class="badge badge-status">申请中</span></div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="experience" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-work"/></svg>实习经历</h2>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <span class="exp-company">上海七牛信息技术有限公司</span>
+                        <span class="exp-role">基础架构部门 · 后端开发工程师</span>
+                    </div>
+                    <span class="date-tag">2025.07 — 2025.10</span>
+                </div>
+                <div class="exp-details">
+                    <p><strong>应用技术：</strong>Vue.js 3、TypeScript、Go、YAP（<a href="https://github.com/goplus/xgo" target="_blank">XGO</a> 生态 DSL 框架）、GORM、MySQL、Redis、Kodo 对象存储</p>
+                    <p><strong>工作职责：</strong>七牛 1024 训练营 XLink 小组组长，主导设计并实现 XBuilder 平台完整分享功能模块，支持 QQ、微信、抖音、小红书、B 站等 5 个平台一键分享图片和视频。</p>
+                    <p><strong>核心贡献：</strong>统筹前后端开发，设计涵盖核心功能模块层、UI 分享弹窗层、平台集成层和 API 服务层的完整架构。前端基于 Vue 3 + TypeScript 实现三种分享方式交互流程，通过策略模式适配 5 个平台；后端使用 GORM 设计录屏记录数据模型，实现 RESTful API 并集成 Kodo 对象存储，通过统一 PlatformConfig 接口实现解耦设计。</p>
+                    <p>
+                        <a href="https://github.com/goplus/builder/tree/trailhead_sharing" target="_blank">开源代码</a> ·
+                        <a href="https://github.com/goplus/builder/blob/trailhead_sharing/docs/develop/share/index.md" target="_blank">架构设计文档</a> ·
+                        <a href="https://github.com/goplus/builder/pulls?q=is%3Apr+author%3ADshuishui+is%3Aclosed" target="_blank">个人 PR 记录</a> ·
+                        <a href="https://mp.weixin.qq.com/s/Uo5mSNofM2j1XXK3uevJwA" target="_blank">实习心得</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-proj"/></svg>项目经历</h2>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">服务器无感的强隔离高弹性一致性分布式存储系统</span>
+                    <span class="date-tag">2023.12 — 2026.02</span>
+                </div>
+                <p class="proj-role">学生小组负责人 · 国家重点研发计划子课题（GOODLAB 课题）</p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>针对服务器无感框架下函数级别计算对分布式数据一致性的差异化需求，以及传统一致性方案在性能与可靠性间的权衡问题，实现了融合因果一致性与强一致性的混合分布式存储系统。</p>
+                    <p><strong>技术实现：</strong>基于 Raft 算法构建一致性层，基于 CRDTs 支持因果一致性，通过 Gossip 协议维护因果关系；利用 LSTM 神经网络分析节点访问模式，预测最优副本同步策略，实现强一致性与因果一致性的自适应切换。</p>
+                    <p><strong>项目成果：</strong>SCI 一区期刊论文 1 篇，发明专利 1 项。</p>
+                </div>
+            </div>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">基于 Raft 优化的键值分离分布式存储系统（Nezha）</span>
+                    <span class="date-tag">2024.06 — 至今</span>
+                </div>
+                <p class="proj-role">独立实现 · 个人科研课题 &ensp;<a href="https://github.com/Dshuishui/Nezha" target="_blank">GitHub</a></p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>针对基于 Raft 的分布式 KV 存储在 LSM-tree 引擎下的写放大问题（每次写操作至少三次磁盘写入），设计并实现原创分布式键值分离存储系统 Nezha。</p>
+                    <p><strong>技术实现：</strong>在 Raft 日志处理阶段实现 KV 分离以减少写放大；设计自适应垃圾回收（GC）框架，通过多轮 GC 策略动态平衡读性能损耗，同时实现 GC 版本隔离保证正确性；结合 Raft 日志批量同步和多协程并发处理。</p>
+                    <p><strong>项目成果：</strong>已被 ICDE 2026（CCF A 类会议）录用；同时被<a href="https://chinasys-2026spring.nwu.edu.cn/" target="_blank">第 30 届 ACM SIGOPS 中国系统研讨会（ChinaSys'26 Spring）</a>录用，以 Oral 形式汇报。</p>
+                </div>
+            </div>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">端云协同驱动的工业产品质量检测系统</span>
+                    <span class="date-tag">2024.05 — 2024.11</span>
+                </div>
+                <p class="proj-role">学生团队负责人 · 权威企业赛事</p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>针对传统工业质检的精度和效率瓶颈，设计并实现端云算力协同的工业产品智能质量检测方案。</p>
+                    <p><strong>技术实现：</strong>基于 YOLOv8 与华为 ModelArts 平台，采用昇腾 NPU + GPU 异构训练，端侧支持开发板和鸿蒙 APP 双重部署，实现本地边缘推理与云端协同检测。</p>
+                    <p><strong>项目成果：</strong>第十九届"挑战杯"华为云赛道国家级二等奖（队长）。</p>
+                </div>
+            </div>
+
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span class="proj-title">ScholarScout — AI 驱动的自然语言学术论文搜索工具</span>
+                    <span class="date-tag">2026.04 — 至今</span>
+                </div>
+                <p class="proj-role">独立开发 · 个人项目 &ensp;<a href="https://github.com/Dshuishui/ScholarScout" target="_blank">GitHub</a> · <a href="http://118.25.192.117" target="_blank">Demo</a></p>
+                <div class="proj-details">
+                    <p><strong>项目描述：</strong>面向非 CS 背景科研人员的学术论文检索工具，用户以中文自然语言描述需求（如"找 2023 年以后关于大模型幻觉的论文"），系统自动提取关键词并并发检索 10 个学术数据库（arXiv、Semantic Scholar、PubMed 等），AI 二次过滤相关性，支持一键 PDF 预览与批量下载。</p>
+                    <p><strong>技术实现：</strong>前端基于 React 18 + TypeScript + Vite，后端使用 FastAPI + SQLAlchemy，通过 Server-Sent Events（SSE）实现实时进度流式推送；集成 DeepSeek API 进行意图解析与相关性验证；实现多源去重（DOI 匹配 + 标题归一化）、用户注册/收藏/阅读历史等功能；部署于个人云服务器，使用 Nginx + systemd + Umami 统计。</p>
+                    <p><strong>项目成果：</strong>开源（MIT 协议），提供在线 Demo，支持 10 个主流学术数据源并发检索。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-award"/></svg>获奖及其他成果</h2>
+            <div class="awards-grid">
+
+                <div class="award-group">
+                    <h3>奖学金</h3>
+                    <div class="award-item">南昌大学 2024–2025 学年 国家奖学金</div>
+                    <div class="award-item">南昌大学 2025–2026 学年 江西省政府奖学金</div>
+                    <div class="award-item">南昌大学 2024–2025 学年 特等学业奖学金</div>
+                    <div class="award-item">南昌大学 2025–2026 学年 特等学业奖学金</div>
+                    <div class="award-item">南昌大学 2023–2024 学年 一等学业奖学金</div>
+                    <div class="award-item">南昌大学 2026 届优秀毕业研究生暨优秀学位论文</div>
+                    <div class="award-item">南昌大学 2026 年研究生创新奖</div>
+                    <div class="award-item">南昌大学 2024–2025 学年 研究生创新奖学金 · 实践之星（全校 6 名额）</div>
+                </div>
+
+                <div class="award-group">
+                    <h3>国家级竞赛</h3>
+                    <div class="award-item">
+                        第十九届"挑战杯"全国大学生课外学术科技作品竞赛"揭榜挂帅"专项赛，<strong>二等奖</strong>（队长）
+                        <div class="award-org">主办：共青团中央、中国科协、教育部、全国学联 · 2024</div>
+                    </div>
+                    <div class="award-item">
+                        第二十一届中国研究生数学建模竞赛，<strong>三等奖</strong>
+                        <div class="award-org">主办：中国学位与研究生教育学会 · 2024</div>
+                    </div>
+                    <div class="award-item">
+                        第六届上海交大-卫宁健康智慧医疗挑战赛，<strong>三等奖</strong>
+                        <div class="award-org">指导：上海市计算机学会 · 2023</div>
+                    </div>
+                    <div class="award-item">
+                        华为开发者大赛中国区学生赛道，<strong>三等奖</strong>（队长）
+                        <div class="award-org">华为 ICT 领域全球开发者赛事 · 2024</div>
+                    </div>
+                </div>
+
+                <div class="award-group">
+                    <h3>省级竞赛</h3>
+                    <div class="award-item">
+                        "数据要素X"大赛江西分赛，<strong>二等奖</strong>
+                        <div class="award-org">指导：国家数据局、江西省人民政府 · 2024</div>
+                    </div>
+                    <div class="award-item">
+                        华为软件精英挑战赛·杭厦赛区，<strong>三等奖</strong>
+                        <div class="award-org">华为公司面向全球高校软件精英赛事 · 2025</div>
+                    </div>
+                    <div class="award-item">
+                        中国高校计算机网络技术挑战赛·华中赛区，<strong>三等奖</strong>（队长）
+                        <div class="award-org">主办：教育部高等学校计算机类专业教学指导委员会 · 2025</div>
+                    </div>
+                </div>
+
+                <div class="award-group">
+                    <h3>其他</h3>
+                    <div class="award-item">
+                        软件设计师（中级）
+                        <div class="award-org">全国计算机技术与软件专业技术资格（水平）考试</div>
+                    </div>
+                    <div class="award-item">英语六级（CET-6）</div>
+                    <div class="award-item">南昌大学优秀学生党员</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-skill"/></svg>专业技能</h2>
+            <ul class="skills-list">
+                <li>熟悉 Go、C 语言，能读写 Java、Python、Node.js 及 Vue 前后端开发代码；熟悉 Linux 基础操作，有服务器运维经验。</li>
+                <li>熟悉分布式共识算法及其潜在优化点（Raft、Paxos 等）；有部署和调试 TiKV 的实践经验。</li>
+                <li>熟悉 gRPC 框架、GORM、MySQL、Redis、RocksDB 相关知识和基本操作；具备扎实的数据结构与算法、计算机网络、操作系统基础。</li>
+            </ul>
+        </section>
+
+        <section id="service" class="section fade-in">
+            <h2 class="section-title"><svg class="section-icon" viewBox="0 0 24 24"><use href="#ico-service"/></svg>社会服务</h2>
+            <div class="service-item">
+                <div class="service-header">
+                    <span class="service-name">2023 年中国计算机学会计算机系统大会（CCFSys 2023）</span>
+                    <span class="date-tag">2023</span>
+                </div>
+                <p class="service-role">重要学生组织者 · 核心志愿者</p>
+                <p class="service-desc">以导师为会议举办的主要负责人，我作为重要学生组织者兼核心志愿者，负责多个会场的秩序管理，为大会的顺利进行做出了重要贡献。</p>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2026 董余聪 (Yucong Dong) &ensp;·&ensp; <a href="mailto:dongyucong@sjtu.edu.cn">dongyucong@sjtu.edu.cn</a></p>
+    <p class="busuanzi-count">
+        访客数 <span id="busuanzi_value_site_uv"></span> 人
+        &ensp;·&ensp;
+        访问量 <span id="busuanzi_value_site_pv"></span> 次
+    </p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<div class="toast" id="toast"></div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
