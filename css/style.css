@@ -746,6 +746,43 @@ footer a:hover {
   border-bottom: none;
 }
 
+.news-item.news-extra {
+  display: none;
+}
+
+.news-item.news-extra.news-visible {
+  display: flex;
+}
+
+.news-toggle {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  color: #64748b;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.news-toggle:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.news-toggle svg {
+  transition: transform 0.2s;
+}
+
+.news-toggle.expanded svg {
+  transform: rotate(180deg);
+}
+
 .news-date {
   font-size: 0.75rem;
   color: #9ca3af;

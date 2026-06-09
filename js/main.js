@@ -104,6 +104,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // News expand/collapse (show first 6, hide the rest)
+    const newsItems = document.querySelectorAll('.news-item');
+    const NEWS_LIMIT = 6;
+    if (newsItems.length > NEWS_LIMIT) {
+        const extras = Array.from(newsItems).slice(NEWS_LIMIT);
+        extras.forEach(function (item) { item.classList.add('news-extra'); });
+
+        const isEn = document.documentElement.lang === 'en';
+        const btn = document.createElement('button');
+        btn.className = 'news-toggle';
+        btn.innerHTML = (isEn ? 'Show more' : '展开更多') +
+            ' <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+
+        btn.addEventListener('click', function () {
+            const expanded = btn.classList.toggle('expanded');
+            extras.forEach(function (item) { item.classList.toggle('news-visible', expanded); });
+            btn.innerHTML = (expanded ? (isEn ? 'Show less' : '收起') : (isEn ? 'Show more' : '展开更多')) +
+                ' <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+        });
+
+        document.querySelector('.news-list').after(btn);
+    }
+
     // GitHub followers (live)
     fetch('https://api.github.com/users/Dshuishui')
         .then(function (r) { return r.json(); })
